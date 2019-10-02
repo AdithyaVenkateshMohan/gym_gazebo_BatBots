@@ -74,19 +74,20 @@ catkin_init_workspace
 # Import and build dependencies
 cd ../../catkin_ws/src/
 vcs import < ../../gazebo.repos
-
+echo "vcs import happebed"
 cd ..
-catkin_make --pkg mav_msgs
-source devel/setup.bash
-catkin_make -j 1
-bash -c 'echo source `pwd`/devel/setup.bash >> ~/.bashrc'
+catkin_make_isolated  --pkg mav_msgs
+source devel_isolated/setup.bash
+echo "pass the mv_msgs make"
+catkin_make_isolated -j 1
+#bash -c 'echo source `pwd`/devel/setup.bash >> ~/.bashrc'
 echo "## ROS workspace compiled ##"
 
 # add own models path to gazebo models path
-if [ -z "$GAZEBO_MODEL_PATH" ]; then
-  bash -c 'echo "export GAZEBO_MODEL_PATH="`pwd`/../../assets/models >> ~/.bashrc'
-  exec bash #reload bashrc
-fi
+# if [ -z "$GAZEBO_MODEL_PATH" ]; then
+#   bash -c 'echo "export GAZEBO_MODEL_PATH="`pwd`/../../assets/models >> ~/.bashrc'
+#   exec bash #reload bashrc
+# fi
 
 # # Theano and Keras installation and requisites
 # cd ../

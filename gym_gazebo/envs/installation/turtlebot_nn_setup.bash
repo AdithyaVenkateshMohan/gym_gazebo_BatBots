@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 if [ -z "$GAZEBO_MODEL_PATH" ]; then

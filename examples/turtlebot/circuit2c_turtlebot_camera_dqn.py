@@ -84,7 +84,7 @@ class DeepQ:
         i = 0
         for layer in self.model.layers:
             weights = layer.get_weights()
-            print "layer ",i,": ",weights
+            print ("layer ",i,": ",weights)
             i += 1
 
     def backupNetwork(self, model, backup):

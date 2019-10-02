@@ -160,3 +160,15 @@ register(
     id='RealMARA3DoF-v0',
     entry_point='gym_gazebo.envs.MARA:RealModularMara3DOFv0Env',
 )
+
+
+#BatBots 
+# adding the usr custom environment over here
+# adding the enviroment Batbots over here
+# author adithya
+
+register(
+    id='GazeboBATBot_Sonar-v0',
+    entry_point='gym_gazebo.envs.BAtBot:Gazebo_BatBot_echo_Circuit_Env',
+    # More arguments here
+)
