@@ -58,7 +58,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         # so it's good for the robot to stay from 4 to 6 units away from the wall
         # for the wall following behav not more not less 
 
-        self.distance_fromWall = 5
+        self.distance_fromWall = 0.7
         self.deltaDistance = 1
         # defining the the reward range
         self.reward_range = (-np.Inf , np.Inf)
@@ -75,7 +75,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         #storing the topic for the observation and reward signals
         # which is to be subscribed and read for getting the data from the sim
         self.observation_topic = '/mybot/laser/polorcloud'
-        self.rewardsignal_topic = '/mybot/closestdistance'
+        self.rewardsignal_topic = '/scan'
         self.collision_topic = '/mybot/collision'
         
         self.seed = self._seed()
@@ -161,7 +161,30 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
     # this is where reward the agent should get is calulated 
     def get_reward(self):
         #this is not yet done have to work on reward function
-        reward = 1
+        AVOIDANCE_DISTANCE = self.distance_fromWall
+        LaserscanRange = None
+        while LaserscanRange is None:
+            try:
+                LaserscanRange  = rospy.wait_for_message(self.rewardsignal_topic , LaserScan , timeout= self.timeout)
+            except:
+                rospy.loginfo("exception raised at getting laser scan from topic", self.observation_topic)
+            
+        ranges = LaserscanRange.ranges
+        print("the ranges of the bat", ranges)
+        minRange = -1
+        for r in ranges:
+            if minRange == -1:
+                minRange = r
+            elif minRange > r:
+                minRange = r
+        print("the nearest obstacle is at ", minRange)
+        if minRange < AVOIDANCE_DISTANCE:
+            reward = 1
+        else:
+            reward =-10
+
+        
+        #reward = 1
         return reward
     
          
