@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel_isolated/perception_pcl/setup.sh

@@ -1,0 +1,8 @@
+prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install_isolated
+
+Name: yocs_joyop
+Description: Description of yocs_joyop
+Version: 0.12.1
+Cflags: 
+Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install_isolated/lib 
+Requires: 

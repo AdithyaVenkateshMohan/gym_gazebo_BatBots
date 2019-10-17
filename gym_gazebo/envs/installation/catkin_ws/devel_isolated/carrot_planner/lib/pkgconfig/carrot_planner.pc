@@ -1,0 +1,8 @@
+prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel_isolated/carrot_planner
+
+Name: carrot_planner
+Description: Description of carrot_planner
+Version: 1.12.16
+Cflags: -I/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/carrot_planner/include
+Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel_isolated/carrot_planner/lib -lcarrot_planner
+Requires: roscpp pluginlib costmap_2d base_local_planner nav_core

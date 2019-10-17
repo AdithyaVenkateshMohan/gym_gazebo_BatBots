@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/build_isolated/kobuki_desktop/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_33b2f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_33b2f.dir/build.make CMakeFiles/cmTC_33b2f.dir/build
+make[1]: Entering directory '/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/build_isolated/kobuki_desktop/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_33b2f.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_33b2f.dir/CheckSymbolExists.c.o   -c /home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/build_isolated/kobuki_desktop/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_33b2f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33b2f.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_33b2f.dir/CheckSymbolExists.c.o  -o cmTC_33b2f -rdynamic 
+CMakeFiles/cmTC_33b2f.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_33b2f.dir/build.make:97: recipe for target 'cmTC_33b2f' failed
+make[1]: *** [cmTC_33b2f] Error 1
+make[1]: Leaving directory '/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/build_isolated/kobuki_desktop/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_33b2f/fast' failed
+make: *** [cmTC_33b2f/fast] Error 2
+
+File /home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/build_isolated/kobuki_desktop/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/build_isolated/kobuki_desktop/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56256/fast"
+/usr/bin/make -f CMakeFiles/cmTC_56256.dir/build.make CMakeFiles/cmTC_56256.dir/build
+make[1]: Entering directory '/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/build_isolated/kobuki_desktop/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_56256.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_56256.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_56256
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56256.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_56256.dir/CheckFunctionExists.c.o  -o cmTC_56256 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_56256.dir/build.make:97: recipe for target 'cmTC_56256' failed
+make[1]: *** [cmTC_56256] Error 1
+make[1]: Leaving directory '/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/build_isolated/kobuki_desktop/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_56256/fast' failed
+make: *** [cmTC_56256/fast] Error 2
+
+

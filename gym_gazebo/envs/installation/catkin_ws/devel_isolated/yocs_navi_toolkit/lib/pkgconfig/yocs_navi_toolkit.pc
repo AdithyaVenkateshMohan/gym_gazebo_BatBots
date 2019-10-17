@@ -1,0 +1,8 @@
+prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel_isolated/yocs_navi_toolkit
+
+Name: yocs_navi_toolkit
+Description: Description of yocs_navi_toolkit
+Version: 0.12.1
+Cflags: -I/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navi_toolkit/include
+Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel_isolated/yocs_navi_toolkit/lib -lyocs_navi_toolkit
+Requires: base_local_planner costmap_2d nav_msgs ecl_build ecl_linear_algebra roscpp tf
