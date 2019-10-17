@@ -73,7 +73,7 @@ catkin_init_workspace
 
 # Import and build dependencies
 cd ../../catkin_ws/src/
-vcs import < ../../gazebo.repos
+vcs import < ../../gazebo_batbot.repos
 echo "vcs import happebed"
 cd ..
 catkin_make_isolated  --pkg mav_msgs
