@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_range.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_range.h
 string
 -
 boost/bind.hpp
@@ -42,7 +42,7 @@ gazebo/plugins/RayPlugin.hh
 sdf/Param.hh
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_utils.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_utils.h
 map
 -
 boost/algorithm/string.hpp
@@ -58,11 +58,11 @@ gazebo/gazebo_config.h
 ros/ros.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/gazebo_ros_range.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/gazebo_ros_range.cpp
 gazebo_plugins/gazebo_ros_range.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/gazebo_plugins/gazebo_ros_range.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/gazebo_plugins/gazebo_ros_range.h
 gazebo_plugins/gazebo_ros_utils.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/gazebo_plugins/gazebo_ros_utils.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/src/gazebo_plugins/gazebo_ros_utils.h
 algorithm
 -
 string

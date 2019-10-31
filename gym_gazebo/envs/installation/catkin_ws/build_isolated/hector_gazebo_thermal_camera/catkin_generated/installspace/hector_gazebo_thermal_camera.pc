@@ -1,8 +1,0 @@
-prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install_isolated
-
-Name: hector_gazebo_thermal_camera
-Description: Description of hector_gazebo_thermal_camera
-Version: 0.3.8
-Cflags: -I/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install_isolated/include
-Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install_isolated/lib 
-Requires: nodelet image_transport dynamic_reconfigure driver_base gazebo_plugins

@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/include/amcl/map/map.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/include/amcl/map/map.h
 stdint.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/map.c
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/map.c
 assert.h
 -
 math.h
@@ -22,9 +22,9 @@ string.h
 stdio.h
 -
 amcl/map/map.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/amcl/map/map.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/amcl/map/map.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/map_draw.c
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/map_draw.c
 errno.h
 -
 math.h
@@ -36,9 +36,9 @@ string.h
 rtk.h
 -
 amcl/map/map.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/amcl/map/map.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/amcl/map/map.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/map_range.c
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/map_range.c
 assert.h
 -
 math.h
@@ -48,9 +48,9 @@ string.h
 stdlib.h
 -
 amcl/map/map.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/amcl/map/map.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/amcl/map/map.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/map_store.c
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/map_store.c
 errno.h
 -
 math.h
@@ -62,5 +62,5 @@ stdlib.h
 string.h
 -
 amcl/map/map.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/amcl/map/map.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/navigation/amcl/src/amcl/map/amcl/map/map.h
 

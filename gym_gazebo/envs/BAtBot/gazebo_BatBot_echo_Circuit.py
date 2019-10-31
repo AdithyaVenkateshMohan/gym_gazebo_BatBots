@@ -65,7 +65,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         # defining the action_space
         self.action_space = spaces.Discrete(4)
         # storing the function pointer for the echo_genration
-        self.echoes_genration = sonar_gen.echo_genration 
+        self.echoes_genration = sonar_gen.echo_genration_for_observation 
         # observation space is defined here
         self.observation_space = spaces.Box(low = -np.Inf , high = np.Inf , shape = (1,28000))
 
@@ -154,7 +154,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
             except:
                 rospy.loginfo("exception raised at getting observation of the polar cloud from topic", self.observation_topic)
         print("cloud points used for observation ", Cloudobservation.points)
-        echo_pulse,echo_time,_ = self.echoes_genration(Cloudobservation.points)
+        echo_pulse,echo_time = self.echoes_genration(Cloudobservation.points)
 
         return echo_pulse, echo_time
 

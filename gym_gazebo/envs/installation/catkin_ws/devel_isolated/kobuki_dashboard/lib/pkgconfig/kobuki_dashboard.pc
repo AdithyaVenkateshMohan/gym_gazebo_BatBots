@@ -1,8 +1,0 @@
-prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel_isolated/kobuki_dashboard
-
-Name: kobuki_dashboard
-Description: Description of kobuki_dashboard
-Version: 0.4.2
-Cflags: 
-Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel_isolated/kobuki_dashboard/lib 
-Requires: 

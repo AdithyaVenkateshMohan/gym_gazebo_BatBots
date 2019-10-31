@@ -1,8 +1,0 @@
-prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install_isolated
-
-Name: catkin_simple
-Description: Description of catkin_simple
-Version: 0.1.1
-Cflags: 
-Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install_isolated/lib 
-Requires: catkin

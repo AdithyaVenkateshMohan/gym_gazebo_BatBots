@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/include/kobuki_ftdi/scanner.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/include/kobuki_ftdi/scanner.hpp
 vector
 -
 map
@@ -16,9 +16,9 @@ usb.h
 stdint.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/src/find_devices.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/src/find_devices.cpp
 iostream
 -
 kobuki_ftdi/scanner.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/src/kobuki_ftdi/scanner.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/src/kobuki_ftdi/scanner.hpp
 

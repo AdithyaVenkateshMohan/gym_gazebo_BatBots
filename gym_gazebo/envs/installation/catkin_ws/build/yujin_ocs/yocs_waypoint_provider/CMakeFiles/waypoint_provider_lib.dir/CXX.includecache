@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/Trajectory.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/Trajectory.h
 string
 -
 vector
@@ -26,7 +26,7 @@ std_msgs/Header.h
 yocs_msgs/Waypoint.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/TrajectoryList.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/TrajectoryList.h
 string
 -
 vector
@@ -44,7 +44,7 @@ ros/message_operations.h
 yocs_msgs/Trajectory.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/Waypoint.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/Waypoint.h
 string
 -
 vector
@@ -64,7 +64,7 @@ std_msgs/Header.h
 geometry_msgs/Pose.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/WaypointList.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/WaypointList.h
 string
 -
 vector
@@ -82,7 +82,7 @@ ros/message_operations.h
 yocs_msgs/Waypoint.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/WaypointListService.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/WaypointListService.h
 ros/service_traits.h
 -
 yocs_msgs/WaypointListServiceRequest.h
@@ -90,7 +90,7 @@ yocs_msgs/WaypointListServiceRequest.h
 yocs_msgs/WaypointListServiceResponse.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/WaypointListServiceRequest.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/WaypointListServiceRequest.h
 string
 -
 vector
@@ -106,7 +106,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/WaypointListServiceResponse.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/WaypointListServiceResponse.h
 string
 -
 vector
@@ -124,7 +124,7 @@ ros/message_operations.h
 yocs_msgs/WaypointList.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_waypoint_provider/include/yocs_waypoint_provider/waypoint_provider.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_waypoint_provider/include/yocs_waypoint_provider/waypoint_provider.hpp
 geometry_msgs/Pose.h
 -
 ros/ros.h
@@ -140,9 +140,9 @@ yocs_msgs/WaypointListService.h
 yocs_msgs/WaypointList.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_waypoint_provider/src/waypoint_provider.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_waypoint_provider/src/waypoint_provider.cpp
 yocs_waypoint_provider/waypoint_provider.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_waypoint_provider/src/yocs_waypoint_provider/waypoint_provider.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_waypoint_provider/src/yocs_waypoint_provider/waypoint_provider.hpp
 
 /opt/ros/kinetic/include/geometry_msgs/Point.h
 string

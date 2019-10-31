@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/wiimote_generate_messages_eus"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/roseus/ros/wiimote/msg/IrSourceInfo.l"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/roseus/ros/wiimote/msg/TimedSwitch.l"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/roseus/ros/wiimote/msg/State.l"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/roseus/ros/wiimote/manifest.l"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/roseus/ros/wiimote/msg/TimedSwitch.l"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/roseus/ros/wiimote/msg/IrSourceInfo.l"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/roseus/ros/wiimote/msg/State.l"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/roseus/ros/wiimote/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

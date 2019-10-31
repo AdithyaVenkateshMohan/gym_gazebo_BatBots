@@ -1,8 +1,0 @@
-prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install_isolated
-
-Name: map_server
-Description: Description of map_server
-Version: 1.12.16
-Cflags: -I/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install_isolated/include
-Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install_isolated/lib -limage_loader
-Requires: roscpp tf nav_msgs

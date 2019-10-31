@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_controllers/include/yocs_controllers/default_controller.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_controllers/include/yocs_controllers/default_controller.hpp
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/include/yocs_diff_drive_pose_controller/diff_drive_pose_controller.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/include/yocs_diff_drive_pose_controller/diff_drive_pose_controller.hpp
 string
 -
 yocs_controllers/default_controller.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/diff_drive_pose_controller.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/diff_drive_pose_controller.cpp
 yocs_diff_drive_pose_controller/diff_drive_pose_controller.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/yocs_diff_drive_pose_controller/diff_drive_pose_controller.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/yocs_diff_drive_pose_controller/diff_drive_pose_controller.hpp
 cmath
 -
 ros/console.h
@@ -24,7 +24,7 @@ ros/console.h
 yocs_math_toolkit/geometry.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_math_toolkit/include/yocs_math_toolkit/geometry.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_math_toolkit/include/yocs_math_toolkit/geometry.hpp
 tf/tf.h
 -
 geometry_msgs/Pose.h

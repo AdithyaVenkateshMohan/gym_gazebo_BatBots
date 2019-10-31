@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/wiimote/IrSourceInfo.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/wiimote/IrSourceInfo.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/wiimote/State.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/wiimote/State.h
 string
 -
 vector
@@ -54,7 +54,7 @@ geometry_msgs/Vector3.h
 wiimote/IrSourceInfo.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/stat_vector_3d.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/stat_vector_3d.h
 vector
 -
 numeric
@@ -64,27 +64,27 @@ algorithm
 math.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/wiimote_controller.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/wiimote_controller.h
 ros/ros.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/ros/ros.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/ros/ros.h
 sensor_msgs/JoyFeedbackArray.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/sensor_msgs/JoyFeedbackArray.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/sensor_msgs/JoyFeedbackArray.h
 std_srvs/Empty.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/std_srvs/Empty.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/std_srvs/Empty.h
 sensor_msgs/Imu.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/sensor_msgs/Imu.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/sensor_msgs/Imu.h
 wiimote/stat_vector_3d.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/wiimote/stat_vector_3d.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/include/wiimote/wiimote/stat_vector_3d.h
 bluetooth/bluetooth.h
 -
 cwiid.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/stat_vector_3d.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/stat_vector_3d.cpp
 wiimote/stat_vector_3d.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/wiimote/stat_vector_3d.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/wiimote/stat_vector_3d.h
 ros/ros.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/ros/ros.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/ros/ros.h
 numeric
 -
 functional
@@ -94,17 +94,17 @@ algorithm
 math.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/wiimote_controller.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/wiimote_controller.cpp
 wiimote/wiimote_controller.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/wiimote/wiimote_controller.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/wiimote/wiimote_controller.h
 sensor_msgs/Joy.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/sensor_msgs/Joy.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/sensor_msgs/Joy.h
 std_msgs/Bool.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/std_msgs/Bool.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/std_msgs/Bool.h
 wiimote/State.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/wiimote/State.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/wiimote/State.h
 wiimote/IrSourceInfo.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/wiimote/IrSourceInfo.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/joystick_drivers/wiimote/src/wiimote/IrSourceInfo.h
 stdarg.h
 -
 stdio.h

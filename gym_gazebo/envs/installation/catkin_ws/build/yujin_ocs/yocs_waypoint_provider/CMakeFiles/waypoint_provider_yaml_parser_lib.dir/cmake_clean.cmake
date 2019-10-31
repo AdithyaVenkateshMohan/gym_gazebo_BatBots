@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/waypoint_provider_yaml_parser_lib.dir/src/yaml_parser.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/libwaypoint_provider_yaml_parser_lib.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/libwaypoint_provider_yaml_parser_lib.so"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/libwaypoint_provider_yaml_parser_lib.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/libwaypoint_provider_yaml_parser_lib.so"
 )
 
 # Per-language clean rules from dependency scanning.

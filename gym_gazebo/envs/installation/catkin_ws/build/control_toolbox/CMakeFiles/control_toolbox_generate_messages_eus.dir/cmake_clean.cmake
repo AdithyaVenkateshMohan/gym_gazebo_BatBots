@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/control_toolbox_generate_messages_eus"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/roseus/ros/control_toolbox/srv/SetPidGains.l"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/roseus/ros/control_toolbox/manifest.l"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/roseus/ros/control_toolbox/srv/SetPidGains.l"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/roseus/ros/control_toolbox/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

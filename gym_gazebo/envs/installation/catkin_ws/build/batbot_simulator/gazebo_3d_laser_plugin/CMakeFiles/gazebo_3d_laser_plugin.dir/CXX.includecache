@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_3d_laser_plugin/include/gazebo_3d_laser_plugin/gazebo_3d_laser.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_3d_laser_plugin/include/gazebo_3d_laser_plugin/gazebo_3d_laser.h
 ros/ros.h
 -
 ros/callback_queue.h
@@ -38,7 +38,7 @@ boost/thread/mutex.hpp
 sensor_msgs/PointCloud.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_3d_laser_plugin/include/gazebo_3d_laser_plugin/gazebo_ros_utils.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_3d_laser_plugin/include/gazebo_3d_laser_plugin/gazebo_ros_utils.h
 map
 -
 boost/algorithm/string.hpp
@@ -54,7 +54,7 @@ gazebo/gazebo_config.h
 ros/ros.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_3d_laser_plugin/src/gazebo_3d_laser.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_3d_laser_plugin/src/gazebo_3d_laser.cpp
 algorithm
 -
 assert.h

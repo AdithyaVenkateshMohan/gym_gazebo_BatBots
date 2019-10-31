@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_velocity_smoother/paramsConfig.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_velocity_smoother/paramsConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -24,7 +24,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_velocity_smoother/include/yocs_velocity_smoother/velocity_smoother_nodelet.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_velocity_smoother/include/yocs_velocity_smoother/velocity_smoother_nodelet.hpp
 ros/ros.h
 -
 nav_msgs/Odometry.h
@@ -32,7 +32,7 @@ nav_msgs/Odometry.h
 mutex
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_velocity_smoother/src/velocity_smoother_nodelet.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_velocity_smoother/src/velocity_smoother_nodelet.cpp
 ros/ros.h
 -
 nodelet/nodelet.h
@@ -46,7 +46,7 @@ yocs_velocity_smoother/paramsConfig.h
 ecl/threads/thread.hpp
 -
 yocs_velocity_smoother/velocity_smoother_nodelet.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_velocity_smoother/src/yocs_velocity_smoother/velocity_smoother_nodelet.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_velocity_smoother/src/yocs_velocity_smoother/velocity_smoother_nodelet.hpp
 
 /opt/ros/kinetic/include/class_loader/./class_loader.hpp
 boost/bind.hpp

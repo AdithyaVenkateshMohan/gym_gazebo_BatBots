@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_controllers/include/yocs_controllers/default_controller.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_controllers/include/yocs_controllers/default_controller.hpp
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/include/yocs_diff_drive_pose_controller/diff_drive_pose_controller.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/include/yocs_diff_drive_pose_controller/diff_drive_pose_controller.hpp
 string
 -
 yocs_controllers/default_controller.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/include/yocs_diff_drive_pose_controller/diff_drive_pose_controller_ros.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/include/yocs_diff_drive_pose_controller/diff_drive_pose_controller_ros.hpp
 ros/ros.h
 -
 std_msgs/Empty.h
@@ -26,11 +26,11 @@ std_msgs/String.h
 tf/transform_listener.h
 -
 yocs_diff_drive_pose_controller/diff_drive_pose_controller.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/include/yocs_diff_drive_pose_controller/yocs_diff_drive_pose_controller/diff_drive_pose_controller.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/include/yocs_diff_drive_pose_controller/yocs_diff_drive_pose_controller/diff_drive_pose_controller.hpp
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/diff_drive_pose_controller.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/diff_drive_pose_controller.cpp
 yocs_diff_drive_pose_controller/diff_drive_pose_controller.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/yocs_diff_drive_pose_controller/diff_drive_pose_controller.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/yocs_diff_drive_pose_controller/diff_drive_pose_controller.hpp
 cmath
 -
 ros/console.h
@@ -38,7 +38,7 @@ ros/console.h
 yocs_math_toolkit/geometry.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/diff_drive_pose_controller_ros.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/diff_drive_pose_controller_ros.cpp
 cmath
 -
 std_msgs/Bool.h
@@ -48,9 +48,9 @@ geometry_msgs/Twist.h
 yocs_math_toolkit/geometry.hpp
 -
 yocs_diff_drive_pose_controller/diff_drive_pose_controller_ros.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/yocs_diff_drive_pose_controller/diff_drive_pose_controller_ros.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/yocs_diff_drive_pose_controller/diff_drive_pose_controller_ros.hpp
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/nodelet.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/nodelet.cpp
 string
 -
 nodelet/nodelet.h
@@ -60,9 +60,9 @@ pluginlib/class_list_macros.h
 ecl/threads/thread.hpp
 -
 yocs_diff_drive_pose_controller/diff_drive_pose_controller_ros.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/yocs_diff_drive_pose_controller/diff_drive_pose_controller_ros.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_diff_drive_pose_controller/src/yocs_diff_drive_pose_controller/diff_drive_pose_controller_ros.hpp
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_math_toolkit/include/yocs_math_toolkit/geometry.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_math_toolkit/include/yocs_math_toolkit/geometry.hpp
 tf/tf.h
 -
 geometry_msgs/Pose.h

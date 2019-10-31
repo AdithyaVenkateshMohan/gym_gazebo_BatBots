@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/polled_camera/srv/GetPolledImage.srv"
+services_str = "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/polled_camera/srv/GetPolledImage.srv"
 pkg_name = "polled_camera"
 dependencies_str = "sensor_msgs;std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

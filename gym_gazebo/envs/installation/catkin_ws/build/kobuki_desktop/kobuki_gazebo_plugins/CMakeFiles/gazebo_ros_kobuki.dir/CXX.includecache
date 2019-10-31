@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/BumperEvent.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/BumperEvent.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/CliffEvent.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/CliffEvent.h
 string
 -
 vector
@@ -38,7 +38,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/MotorPower.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/MotorPower.h
 string
 -
 vector
@@ -54,7 +54,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_utils.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include/gazebo_plugins/gazebo_ros_utils.h
 map
 -
 boost/algorithm/string.hpp
@@ -70,7 +70,7 @@ gazebo/gazebo_config.h
 ros/ros.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/include/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/include/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
 cmath
 -
 cstring
@@ -124,7 +124,7 @@ kobuki_msgs/CliffEvent.h
 kobuki_msgs/BumperEvent.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/src/gazebo_ros_kobuki.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/src/gazebo_ros_kobuki.cpp
 cmath
 -
 cstring
@@ -138,15 +138,15 @@ tf/LinearMath/Quaternion.h
 gazebo/math/gzmath.hh
 -
 kobuki_gazebo_plugins/gazebo_ros_kobuki.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/src/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/src/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/src/gazebo_ros_kobuki_loads.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/src/gazebo_ros_kobuki_loads.cpp
 kobuki_gazebo_plugins/gazebo_ros_kobuki.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/src/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/src/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/src/gazebo_ros_kobuki_updates.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/src/gazebo_ros_kobuki_updates.cpp
 kobuki_gazebo_plugins/gazebo_ros_kobuki.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/src/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/src/kobuki_gazebo_plugins/gazebo_ros_kobuki.h
 
 /opt/ros/kinetic/include/geometry_msgs/Point.h
 string

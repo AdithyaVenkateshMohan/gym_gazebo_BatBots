@@ -1,8 +1,8 @@
-prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel
+prefix=/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel
 
 Name: kobuki_testsuite
 Description: Description of kobuki_testsuite
 Version: 0.6.8
 Cflags: 
-Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib 
+Libs: -L/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib 
 Requires: 

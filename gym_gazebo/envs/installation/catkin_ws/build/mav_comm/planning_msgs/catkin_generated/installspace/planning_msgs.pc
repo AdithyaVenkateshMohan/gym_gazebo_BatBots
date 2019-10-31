@@ -1,8 +1,8 @@
-prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install
+prefix=/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/install
 
 Name: planning_msgs
 Description: Description of planning_msgs
 Version: 1.0.0
-Cflags: -I/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install/include -I/usr/include/eigen3
-Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install/lib 
+Cflags: -I/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/install/include -I/usr/include/eigen3
+Libs: -L/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/install/lib 
 Requires: message_runtime geometry_msgs sensor_msgs octomap_msgs

@@ -6,8 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/image_transport.dir/src/publisher.cpp.o"
   "CMakeFiles/image_transport.dir/src/single_subscriber_publisher.cpp.o"
   "CMakeFiles/image_transport.dir/src/subscriber.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/libimage_transport.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/libimage_transport.so"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/libimage_transport.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/libimage_transport.so"
 )
 
 # Per-language clean rules from dependency scanning.

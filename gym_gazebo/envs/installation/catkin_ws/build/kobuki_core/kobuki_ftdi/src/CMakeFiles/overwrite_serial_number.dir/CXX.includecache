@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/include/kobuki_ftdi/scanner.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/include/kobuki_ftdi/scanner.hpp
 vector
 -
 map
@@ -16,21 +16,21 @@ usb.h
 stdint.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/include/kobuki_ftdi/writer.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/include/kobuki_ftdi/writer.hpp
 cstring
 -
 ftdi.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/src/overwrite_serial_number.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/src/overwrite_serial_number.cpp
 iostream
 -
 ecl/command_line.hpp
 -
 kobuki_ftdi/writer.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/src/kobuki_ftdi/writer.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/src/kobuki_ftdi/writer.hpp
 kobuki_ftdi/scanner.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/src/kobuki_ftdi/scanner.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_ftdi/src/kobuki_ftdi/scanner.hpp
 
 /opt/ros/kinetic/include/ecl/command_line.hpp
 command_line/cmd_line.hpp

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/kobuki_velocity_commands.dir/velocity_commands.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/kobuki_driver/kobuki_velocity_commands.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/kobuki_driver/kobuki_velocity_commands"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/kobuki_driver/kobuki_velocity_commands.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/kobuki_driver/kobuki_velocity_commands"
 )
 
 # Per-language clean rules from dependency scanning.

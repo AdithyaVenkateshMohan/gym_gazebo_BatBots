@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/camera_common.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/camera_common.h
 string
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/camera_publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/camera_publisher.h
 ros/ros.h
 -
 sensor_msgs/Image.h
@@ -18,9 +18,9 @@ sensor_msgs/Image.h
 sensor_msgs/CameraInfo.h
 -
 image_transport/single_subscriber_publisher.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/single_subscriber_publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/single_subscriber_publisher.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/camera_subscriber.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/camera_subscriber.h
 ros/ros.h
 -
 sensor_msgs/CameraInfo.h
@@ -28,45 +28,45 @@ sensor_msgs/CameraInfo.h
 sensor_msgs/Image.h
 -
 image_transport/transport_hints.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/transport_hints.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/transport_hints.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/exception.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/exception.h
 stdexcept
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport.h
 image_transport/publisher.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/publisher.h
 image_transport/subscriber.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/subscriber.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/subscriber.h
 image_transport/camera_publisher.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/camera_publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/camera_publisher.h
 image_transport/camera_subscriber.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/camera_subscriber.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/camera_subscriber.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/loader_fwds.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/loader_fwds.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/publisher.h
 ros/ros.h
 -
 sensor_msgs/Image.h
 -
 image_transport/single_subscriber_publisher.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/single_subscriber_publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/single_subscriber_publisher.h
 image_transport/exception.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/exception.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/exception.h
 image_transport/loader_fwds.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/loader_fwds.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/loader_fwds.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/publisher_plugin.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/publisher_plugin.h
 ros/ros.h
 -
 sensor_msgs/Image.h
 -
 image_transport/single_subscriber_publisher.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/single_subscriber_publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/single_subscriber_publisher.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/single_subscriber_publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/single_subscriber_publisher.h
 boost/noncopyable.hpp
 -
 boost/function.hpp
@@ -74,27 +74,27 @@ boost/function.hpp
 sensor_msgs/Image.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/subscriber.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/subscriber.h
 ros/ros.h
 -
 sensor_msgs/Image.h
 -
 image_transport/transport_hints.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/transport_hints.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/transport_hints.h
 image_transport/exception.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/exception.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/exception.h
 image_transport/loader_fwds.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/loader_fwds.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/loader_fwds.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/subscriber_filter.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/subscriber_filter.h
 ros/ros.h
 -
 message_filters/simple_filter.h
 -
 image_transport/image_transport.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/image_transport.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/image_transport.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/subscriber_plugin.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/subscriber_plugin.h
 ros/ros.h
 -
 sensor_msgs/Image.h
@@ -102,15 +102,15 @@ sensor_msgs/Image.h
 boost/noncopyable.hpp
 -
 image_transport/transport_hints.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/transport_hints.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/transport_hints.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/transport_hints.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/transport_hints.h
 ros/ros.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/camera_common.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/camera_common.cpp
 image_transport/camera_common.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/camera_common.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/camera_common.h
 boost/algorithm/string/classification.hpp
 -
 boost/algorithm/string/split.hpp
@@ -120,31 +120,31 @@ boost/algorithm/string/join.hpp
 vector
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/camera_publisher.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/camera_publisher.cpp
 image_transport/image_transport.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/image_transport.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/image_transport.h
 image_transport/camera_common.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/camera_common.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/camera_common.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/camera_subscriber.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/camera_subscriber.cpp
 image_transport/camera_subscriber.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/camera_subscriber.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/camera_subscriber.h
 image_transport/subscriber_filter.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/subscriber_filter.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/subscriber_filter.h
 image_transport/camera_common.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/camera_common.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/camera_common.h
 message_filters/subscriber.h
 -
 message_filters/time_synchronizer.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport.cpp
 image_transport/image_transport.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/image_transport.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/image_transport.h
 image_transport/publisher_plugin.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/publisher_plugin.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/publisher_plugin.h
 image_transport/subscriber_plugin.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/subscriber_plugin.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/subscriber_plugin.h
 pluginlib/class_loader.h
 -
 boost/make_shared.hpp
@@ -154,11 +154,11 @@ boost/foreach.hpp
 boost/algorithm/string/erase.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/publisher.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/publisher.cpp
 image_transport/publisher.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/publisher.h
 image_transport/publisher_plugin.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/publisher_plugin.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/publisher_plugin.h
 pluginlib/class_loader.h
 -
 boost/foreach.hpp
@@ -166,17 +166,17 @@ boost/foreach.hpp
 boost/algorithm/string/erase.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/single_subscriber_publisher.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/single_subscriber_publisher.cpp
 image_transport/single_subscriber_publisher.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/single_subscriber_publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/single_subscriber_publisher.h
 image_transport/publisher.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/publisher.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/subscriber.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/subscriber.cpp
 image_transport/subscriber.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/subscriber.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/subscriber.h
 image_transport/subscriber_plugin.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/subscriber_plugin.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/src/image_transport/subscriber_plugin.h
 ros/names.h
 -
 pluginlib/class_loader.h

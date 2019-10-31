@@ -1,16 +1,16 @@
 
 "use strict";
 
-let WayPoint = require('./WayPoint.js');
 let OctomapScan = require('./OctomapScan.js');
+let WayPoint = require('./WayPoint.js');
+let WayPointArray = require('./WayPointArray.js');
 let WaypointType = require('./WaypointType.js');
 let PlanningResponse = require('./PlanningResponse.js');
-let WayPointArray = require('./WayPointArray.js');
 
 module.exports = {
-  WayPoint: WayPoint,
   OctomapScan: OctomapScan,
+  WayPoint: WayPoint,
+  WayPointArray: WayPointArray,
   WaypointType: WaypointType,
   PlanningResponse: PlanningResponse,
-  WayPointArray: WayPointArray,
 };

@@ -1,5 +1,5 @@
 set(_xacro_py
-  /home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/xacro/scripts/xacro
+  /home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/xacro/scripts/xacro
 )
 
 macro(xacro_add_xacro_file input output)

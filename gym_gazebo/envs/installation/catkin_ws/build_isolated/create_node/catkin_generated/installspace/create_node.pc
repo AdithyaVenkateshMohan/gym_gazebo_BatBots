@@ -1,8 +1,0 @@
-prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install_isolated
-
-Name: create_node
-Description: Description of create_node
-Version: 2.3.1
-Cflags: -I/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install_isolated/include
-Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install_isolated/lib 
-Requires: diagnostic_msgs geometry_msgs message_runtime nav_msgs

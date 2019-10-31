@@ -1,8 +1,0 @@
-prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install
-
-Name: mybot_gazebo
-Description: Description of mybot_gazebo
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/install/lib 
-Requires: 

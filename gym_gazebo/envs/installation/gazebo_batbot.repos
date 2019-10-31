@@ -36,10 +36,10 @@ repositories:
  #   type: git
  #   url: https://github.com/stonier/ecl_navigation
  #   version: devel
- # ecl_tools:
- #   type: git
- #   url: https://github.com/stonier/ecl_tools
- #   version: devel
+  ecl_tools:
+    type: git
+    url: https://github.com/stonier/ecl_tools
+    version: devel
   driver_base:
     type: git
     url: https://github.com/ros-drivers/driver_common.git

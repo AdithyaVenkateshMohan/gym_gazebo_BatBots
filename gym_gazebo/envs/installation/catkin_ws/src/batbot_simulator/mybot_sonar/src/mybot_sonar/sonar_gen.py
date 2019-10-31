@@ -11,7 +11,8 @@
 
 # importing below required libaries
 import rospy 
-import pcl 
+
+#import pcl 
 from sensor_msgs.msg import PointCloud 
 from geometry_msgs.msg import Point 
 
@@ -303,6 +304,103 @@ def echo_gen_Direct(distances , azimuths , elevations):
     echo_sequence = numpy.convolve(emission, impulse_response, mode='same')
 
     return echo_sequence, impulse_time
+
+def echo_genration_for_observation(pc_list):
+    #param for the echo generation
+    global i 
+    
+
+    #####this is where i can give the input 
+    azimuths = numpy.array([])
+    elevations = numpy.array([])
+    distances = numpy.array([])
+    print("single point", pc_list[0],"no of points", len(pc_list))
+    for p in pc_list:
+        #print(p)
+        distances = numpy.append(distances, p.x)
+        azimuths = numpy.append(azimuths, math.degrees(p.y))
+        elevations = numpy.append(elevations, math.degrees(p.z))
+    
+
+    print("most near by dist", numpy.min(distances))
+
+    # if not we didn't recive any points    
+    assert(distances.size > 0)
+
+    echo_sequence , impulse_time = echo_gen_with_ears(distances , azimuths , elevations)
+
+    return echo_sequence , impulse_time 
+
+# this fucntion is made for to be called to generate echo signals for the two ears of the robot
+def echo_gen_with_ears(distances , azimuths , elevations):
+    # this for simulating the directionality between the ears
+    # adding and substracting to azimuths based on the ears
+    # this means the left ear gives more preference to points on left than that of right and viceversa for rightear
+    left_azimuth = azimuths + 0
+    right_azimuth = azimuths - 0
+    sample_frequency = 125000
+    emission_level = 100
+    emission_duration = 0.0025
+    emission_frequency = 40000
+    emitter_radius = 0.005
+    absorption_coefficient = 1.318  # http://www.sengpielaudio.com/calculator-air.htm
+    reflection_strength = -40
+    speed_of_sound = 340
+
+    emission_samples = int(sample_frequency * emission_duration)
+    emission_time = numpy.linspace(0, emission_duration, emission_samples)
+    emission = numpy.sin(2 * numpy.pi * emission_frequency * emission_time)
+    window = library.signal_ramp(emission_samples, 10)
+    emission = emission * window
+
+    piston, degrees = library.pistonmodel(emission_frequency, radius=emitter_radius)
+    piston = 10 * numpy.log10(piston)
+    piston_function = interp1d(degrees, piston)
+
+    # pyplot.figure()
+    # pyplot.plot(degrees, piston)
+
+    # %%
+    # Get excentricities and echo delays
+
+    excentricities_left  = library.gca(left_azimuth, elevations, 0, 0)
+    excentricities_right  = library.gca(right_azimuth, elevations, 0, 0)
+    # @causing errors is this too  long for 
+    delays = 2 * distances / speed_of_sound
+
+    # %%
+    # Calculate path losses
+    loss_directionality_left = piston_function(excentricities_left)
+    loss_directionality_right = piston_function(excentricities_right)
+    loss_attenuation = - 2 * distances * absorption_coefficient
+    loss_spreading = -40 * numpy.log10(distances)
+
+    echoes_left = emission_level + reflection_strength + loss_directionality_left + loss_attenuation + loss_spreading
+    echoes_right = emission_level + reflection_strength + loss_directionality_right + loss_attenuation + loss_spreading
+    echoes_pa_l = library.db2pa(echoes_left)
+    echoes_pa_l[echoes_left < 0] = 0
+
+    echoes_pa_r = library.db2pa(echoes_right)
+    echoes_pa_r[echoes_right < 0] = 0
+
+
+    # %%
+    # Make impulse response
+    impulse_time_l, impulse_response_l = library.make_impulse_response(delays, echoes_pa_l, emission_duration, sample_frequency)
+    impulse_time_r, impulse_response_r = library.make_impulse_response(delays, echoes_pa_r, emission_duration, sample_frequency)
+
+    # pyplot.figure()
+    # pyplot.plot(impulse_time, impulse_response)
+
+    # %%
+    # Make echo sequence
+    echo_sequence_l = numpy.convolve(emission, impulse_response_l, mode='same')
+    echo_sequence_r = numpy.convolve(emission, impulse_response_r, mode='same')
+
+    echo_sequence = (echo_sequence_l , echo_sequence_r)
+
+    return echo_sequence, impulse_time_l
+
 
 def echo_total_energycalulation(echo):
     return numpy.sum(numpy.power(echo,2))

@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/include/camera_calibration_parsers/parse.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/include/camera_calibration_parsers/parse.h
 string
 -
 sensor_msgs/CameraInfo.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/include/camera_calibration_parsers/parse_wrapper.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/include/camera_calibration_parsers/parse_wrapper.h
 string
 -
 boost/python.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/parse_wrapper.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/parse_wrapper.cpp
 camera_calibration_parsers/parse.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse.h
 camera_calibration_parsers/parse_wrapper.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse_wrapper.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse_wrapper.h
 boost/python.hpp
 -
 ros/serialization.h

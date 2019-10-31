@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/demo_kobuki_initialisation.dir/initialisation.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/kobuki_driver/demo_kobuki_initialisation.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/kobuki_driver/demo_kobuki_initialisation"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/kobuki_driver/demo_kobuki_initialisation.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/kobuki_driver/demo_kobuki_initialisation"
 )
 
 # Per-language clean rules from dependency scanning.

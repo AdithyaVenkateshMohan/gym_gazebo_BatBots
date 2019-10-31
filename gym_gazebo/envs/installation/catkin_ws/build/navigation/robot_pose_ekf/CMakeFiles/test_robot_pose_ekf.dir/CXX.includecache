@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/robot_pose_ekf/test/test_robot_pose_ekf.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/navigation/robot_pose_ekf/test/test_robot_pose_ekf.cpp
 string
 -
 gtest/gtest.h
 -
 ros/ros.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/robot_pose_ekf/test/ros/ros.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/navigation/robot_pose_ekf/test/ros/ros.h
 nav_msgs/Odometry.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/robot_pose_ekf/test/nav_msgs/Odometry.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/navigation/robot_pose_ekf/test/nav_msgs/Odometry.h
 geometry_msgs/PoseWithCovarianceStamped.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/navigation/robot_pose_ekf/test/geometry_msgs/PoseWithCovarianceStamped.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/navigation/robot_pose_ekf/test/geometry_msgs/PoseWithCovarianceStamped.h
 boost/thread.hpp
 -
 

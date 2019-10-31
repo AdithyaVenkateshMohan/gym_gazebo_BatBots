@@ -6,8 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/transmission_interface_loader_plugins.dir/src/position_joint_interface_provider.cpp.o"
   "CMakeFiles/transmission_interface_loader_plugins.dir/src/velocity_joint_interface_provider.cpp.o"
   "CMakeFiles/transmission_interface_loader_plugins.dir/src/effort_joint_interface_provider.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/libtransmission_interface_loader_plugins.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/libtransmission_interface_loader_plugins.so"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/libtransmission_interface_loader_plugins.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/libtransmission_interface_loader_plugins.so"
 )
 
 # Per-language clean rules from dependency scanning.

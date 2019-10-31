@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseAction.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseAction.h
 string
 -
 vector
@@ -28,7 +28,7 @@ move_base_msgs/MoveBaseActionResult.h
 move_base_msgs/MoveBaseActionFeedback.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseActionFeedback.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseActionFeedback.h
 string
 -
 vector
@@ -50,7 +50,7 @@ actionlib_msgs/GoalStatus.h
 move_base_msgs/MoveBaseFeedback.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseActionGoal.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseActionGoal.h
 string
 -
 vector
@@ -72,7 +72,7 @@ actionlib_msgs/GoalID.h
 move_base_msgs/MoveBaseGoal.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseActionResult.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseActionResult.h
 string
 -
 vector
@@ -94,7 +94,7 @@ actionlib_msgs/GoalStatus.h
 move_base_msgs/MoveBaseResult.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseFeedback.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseFeedback.h
 string
 -
 vector
@@ -112,7 +112,7 @@ ros/message_operations.h
 geometry_msgs/PoseStamped.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseGoal.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseGoal.h
 string
 -
 vector
@@ -130,7 +130,7 @@ ros/message_operations.h
 geometry_msgs/PoseStamped.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseResult.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/move_base_msgs/MoveBaseResult.h
 string
 -
 vector
@@ -146,7 +146,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToAction.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToAction.h
 string
 -
 vector
@@ -168,7 +168,7 @@ yocs_msgs/NavigateToActionResult.h
 yocs_msgs/NavigateToActionFeedback.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToActionFeedback.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToActionFeedback.h
 string
 -
 vector
@@ -190,7 +190,7 @@ actionlib_msgs/GoalStatus.h
 yocs_msgs/NavigateToFeedback.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToActionGoal.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToActionGoal.h
 string
 -
 vector
@@ -212,7 +212,7 @@ actionlib_msgs/GoalID.h
 yocs_msgs/NavigateToGoal.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToActionResult.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToActionResult.h
 string
 -
 vector
@@ -234,7 +234,7 @@ actionlib_msgs/GoalStatus.h
 yocs_msgs/NavigateToResult.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToFeedback.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToFeedback.h
 string
 -
 vector
@@ -250,7 +250,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToGoal.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToGoal.h
 string
 -
 vector
@@ -266,7 +266,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToResult.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/NavigateToResult.h
 string
 -
 vector
@@ -282,7 +282,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/Waypoint.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/Waypoint.h
 string
 -
 vector
@@ -302,7 +302,7 @@ std_msgs/Header.h
 geometry_msgs/Pose.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/WaypointList.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/WaypointList.h
 string
 -
 vector
@@ -320,7 +320,7 @@ ros/message_operations.h
 yocs_msgs/Waypoint.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_math_toolkit/include/yocs_math_toolkit/common.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_math_toolkit/include/yocs_math_toolkit/common.hpp
 tf/tf.h
 -
 geometry_msgs/Pose.h
@@ -332,7 +332,7 @@ ecl/config/macros.hpp
 ecl/config/macros.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_math_toolkit/include/yocs_math_toolkit/geometry.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_math_toolkit/include/yocs_math_toolkit/geometry.hpp
 tf/tf.h
 -
 geometry_msgs/Pose.h
@@ -340,7 +340,7 @@ geometry_msgs/Pose.h
 geometry_msgs/PoseStamped.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/include/yocs_navigator/basic_move_controller.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/include/yocs_navigator/basic_move_controller.hpp
 ros/ros.h
 -
 tf/tf.h
@@ -354,11 +354,11 @@ nav_msgs/Odometry.h
 geometry_msgs/Twist.h
 -
 yocs_navigator/default_params.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/include/yocs_navigator/yocs_navigator/default_params.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/include/yocs_navigator/yocs_navigator/default_params.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/include/yocs_navigator/default_params.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/include/yocs_navigator/default_params.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/include/yocs_navigator/semantic_navigator.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/include/yocs_navigator/semantic_navigator.hpp
 ros/ros.h
 -
 actionlib/client/simple_action_client.h
@@ -376,15 +376,15 @@ geometry_msgs/PoseStamped.h
 std_srvs/Empty.h
 -
 yocs_navigator/default_params.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/include/yocs_navigator/yocs_navigator/default_params.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/include/yocs_navigator/yocs_navigator/default_params.h
 yocs_navigator/basic_move_controller.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/include/yocs_navigator/yocs_navigator/basic_move_controller.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/include/yocs_navigator/yocs_navigator/basic_move_controller.hpp
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/src/semantic_navigator_main.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/src/semantic_navigator_main.cpp
 ros/ros.h
 -
 yocs_navigator/semantic_navigator.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/src/yocs_navigator/semantic_navigator.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_navigator/src/yocs_navigator/semantic_navigator.hpp
 
 /opt/ros/kinetic/include/actionlib/action_definition.h
 

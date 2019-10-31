@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/mavros_msgs/CamIMUStamp.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/mavros_msgs/CamIMUStamp.h
 string
 -
 vector
@@ -22,25 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/mavros_msgs/Mavlink.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-std_msgs/Header.h
--
-
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/mavros_msgs/OpticalFlowRad.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/mavros_msgs/Mavlink.h
 string
 -
 vector
@@ -58,7 +40,25 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/mavros_msgs/Vibration.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/mavros_msgs/OpticalFlowRad.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/mavros_msgs/Vibration.h
 string
 -
 vector
@@ -78,7 +78,7 @@ std_msgs/Header.h
 geometry_msgs/Vector3.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/camera_publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/camera_publisher.h
 ros/ros.h
 -
 sensor_msgs/Image.h
@@ -86,9 +86,9 @@ sensor_msgs/Image.h
 sensor_msgs/CameraInfo.h
 -
 image_transport/single_subscriber_publisher.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/single_subscriber_publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/single_subscriber_publisher.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/camera_subscriber.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/camera_subscriber.h
 ros/ros.h
 -
 sensor_msgs/CameraInfo.h
@@ -96,37 +96,37 @@ sensor_msgs/CameraInfo.h
 sensor_msgs/Image.h
 -
 image_transport/transport_hints.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/transport_hints.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/transport_hints.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/exception.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/exception.h
 stdexcept
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport.h
 image_transport/publisher.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/publisher.h
 image_transport/subscriber.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/subscriber.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/subscriber.h
 image_transport/camera_publisher.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/camera_publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/camera_publisher.h
 image_transport/camera_subscriber.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/camera_subscriber.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/camera_subscriber.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/loader_fwds.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/loader_fwds.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/publisher.h
 ros/ros.h
 -
 sensor_msgs/Image.h
 -
 image_transport/single_subscriber_publisher.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/single_subscriber_publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/single_subscriber_publisher.h
 image_transport/exception.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/exception.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/exception.h
 image_transport/loader_fwds.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/loader_fwds.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/loader_fwds.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/single_subscriber_publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/single_subscriber_publisher.h
 boost/noncopyable.hpp
 -
 boost/function.hpp
@@ -134,23 +134,23 @@ boost/function.hpp
 sensor_msgs/Image.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/subscriber.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/subscriber.h
 ros/ros.h
 -
 sensor_msgs/Image.h
 -
 image_transport/transport_hints.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/transport_hints.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/transport_hints.h
 image_transport/exception.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/exception.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/exception.h
 image_transport/loader_fwds.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/loader_fwds.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/image_transport/loader_fwds.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/transport_hints.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/image_transport/include/image_transport/transport_hints.h
 ros/ros.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/interface.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/interface.h
 boost/bind.hpp
 -
 boost/signals2.hpp
@@ -180,7 +180,7 @@ stdexcept
 mavconn/mavlink_dialect.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/mavlink_dialect.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/mavlink_dialect.h
 mavlink/v1.0/mavlink_types.h
 -
 mavlink/v1.0/ardupilotmega/mavlink.h
@@ -208,7 +208,7 @@ mavlink/v1.0/ASLUAV/mavlink.h
 mavlink/v1.0/paparazzi/mavlink.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/thread_utils.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/thread_utils.h
 thread
 -
 cstdio
@@ -220,7 +220,7 @@ cstdarg
 pthread.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h
 map
 -
 diagnostic_updater/diagnostic_updater.h
@@ -230,7 +230,7 @@ mavconn/interface.h
 mavros/mavros_uas.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/mavros_uas.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/mavros_uas.h
 array
 -
 mutex
@@ -254,7 +254,7 @@ sensor_msgs/Imu.h
 sensor_msgs/NavSatFix.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/setpoint_mixin.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/setpoint_mixin.h
 mavros/utils.h
 -
 mavros/mavros_plugin.h
@@ -262,13 +262,13 @@ mavros/mavros_plugin.h
 geometry_msgs/TransformStamped.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/utils.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/utils.h
 mavconn/thread_utils.h
 -
 mavros_msgs/mavlink_convert.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/cam_imu_sync.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/cam_imu_sync.cpp
 mavros/mavros_plugin.h
 -
 pluginlib/class_list_macros.h
@@ -276,7 +276,7 @@ pluginlib/class_list_macros.h
 mavros_msgs/CamIMUStamp.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/distance_sensor.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/distance_sensor.cpp
 unordered_map
 -
 mavros/utils.h
@@ -290,7 +290,7 @@ eigen_conversions/eigen_msg.h
 sensor_msgs/Range.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/image_pub.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/image_pub.cpp
 mavros/mavros_plugin.h
 -
 pluginlib/class_list_macros.h
@@ -304,7 +304,7 @@ cv_bridge/cv_bridge.h
 opencv2/opencv.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/mocap_pose_estimate.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/mocap_pose_estimate.cpp
 mavros/mavros_plugin.h
 -
 pluginlib/class_list_macros.h
@@ -316,7 +316,7 @@ geometry_msgs/PoseStamped.h
 geometry_msgs/TransformStamped.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/px4flow.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/px4flow.cpp
 mavros/mavros_plugin.h
 -
 pluginlib/class_list_macros.h
@@ -328,7 +328,7 @@ sensor_msgs/Temperature.h
 sensor_msgs/Range.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/vibration.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/vibration.cpp
 mavros/mavros_plugin.h
 -
 pluginlib/class_list_macros.h
@@ -336,7 +336,7 @@ pluginlib/class_list_macros.h
 mavros_msgs/Vibration.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/vision_pose_estimate.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/vision_pose_estimate.cpp
 mavros/mavros_plugin.h
 -
 mavros/setpoint_mixin.h
@@ -350,7 +350,7 @@ geometry_msgs/PoseStamped.h
 geometry_msgs/PoseWithCovarianceStamped.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/vision_speed_estimate.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_extras/src/plugins/vision_speed_estimate.cpp
 mavros/mavros_plugin.h
 -
 pluginlib/class_list_macros.h
@@ -362,7 +362,7 @@ geometry_msgs/TwistStamped.h
 geometry_msgs/Vector3Stamped.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h
 algorithm
 -
 mavros_msgs/Mavlink.h

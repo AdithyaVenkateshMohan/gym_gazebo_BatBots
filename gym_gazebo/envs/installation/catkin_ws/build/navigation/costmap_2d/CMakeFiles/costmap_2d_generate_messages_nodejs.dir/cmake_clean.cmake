@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/costmap_2d_generate_messages_nodejs"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/gennodejs/ros/costmap_2d/msg/VoxelGrid.js"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/gennodejs/ros/costmap_2d/msg/VoxelGrid.js"
 )
 
 # Per-language clean rules from dependency scanning.

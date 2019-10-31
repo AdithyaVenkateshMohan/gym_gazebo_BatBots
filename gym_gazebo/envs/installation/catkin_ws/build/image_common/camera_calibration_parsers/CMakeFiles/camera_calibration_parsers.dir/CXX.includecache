@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/include/camera_calibration_parsers/parse.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/include/camera_calibration_parsers/parse.h
 string
 -
 sensor_msgs/CameraInfo.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/include/camera_calibration_parsers/parse_ini.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/include/camera_calibration_parsers/parse_ini.h
 string
 -
 sensor_msgs/CameraInfo.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/include/camera_calibration_parsers/parse_yml.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/include/camera_calibration_parsers/parse_yml.h
 string
 -
 istream
@@ -28,19 +28,19 @@ ostream
 sensor_msgs/CameraInfo.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/parse.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/parse.cpp
 camera_calibration_parsers/parse.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse.h
 camera_calibration_parsers/parse_ini.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse_ini.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse_ini.h
 camera_calibration_parsers/parse_yml.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse_yml.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse_yml.h
 boost/algorithm/string/predicate.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/parse_ini.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/parse_ini.cpp
 camera_calibration_parsers/parse_ini.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse_ini.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse_ini.h
 sensor_msgs/distortion_models.h
 -
 ros/console.h
@@ -66,9 +66,9 @@ iterator
 fstream
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/parse_yml.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/parse_yml.cpp
 camera_calibration_parsers/parse_yml.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse_yml.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/src/camera_calibration_parsers/parse_yml.h
 sensor_msgs/distortion_models.h
 -
 boost/filesystem.hpp

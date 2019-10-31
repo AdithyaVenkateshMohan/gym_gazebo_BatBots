@@ -1,8 +1,0 @@
-prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel_isolated/gazebo_rosPosePublisher
-
-Name: gazebo_rosPosePublisher
-Description: Description of gazebo_rosPosePublisher
-Version: 0.0.0
-Cflags: -I/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_rosPosePublisher/include
-Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel_isolated/gazebo_rosPosePublisher/lib -lgazebo_rosPosePublisher
-Requires: gazebo_msgs gazebo_plugin gazebo_ros geometry_msgs roscpp std_msgs

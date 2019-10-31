@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/interface.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/interface.h
 boost/bind.hpp
 -
 boost/signals2.hpp
@@ -36,7 +36,7 @@ stdexcept
 mavconn/mavlink_dialect.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/mavlink_dialect.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/mavlink_dialect.h
 mavlink/v1.0/mavlink_types.h
 -
 mavlink/v1.0/ardupilotmega/mavlink.h
@@ -64,13 +64,13 @@ mavlink/v1.0/ASLUAV/mavlink.h
 mavlink/v1.0/paparazzi/mavlink.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/msgbuffer.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/msgbuffer.h
 cassert
 -
 mavconn/mavlink_dialect.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/serial.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/serial.h
 list
 -
 atomic
@@ -82,7 +82,7 @@ mavconn/interface.h
 mavconn/msgbuffer.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/tcp.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/tcp.h
 list
 -
 atomic
@@ -94,7 +94,7 @@ mavconn/interface.h
 mavconn/msgbuffer.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/thread_utils.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/thread_utils.h
 thread
 -
 cstdio
@@ -106,7 +106,7 @@ cstdarg
 pthread.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/udp.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/udp.h
 list
 -
 atomic
@@ -118,7 +118,7 @@ mavconn/interface.h
 mavconn/msgbuffer.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/src/interface.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/src/interface.cpp
 set
 -
 cassert
@@ -136,13 +136,13 @@ mavconn/udp.h
 mavconn/tcp.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/src/mavlink_helpers.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/src/mavlink_helpers.cpp
 cassert
 -
 mavconn/mavlink_dialect.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/src/serial.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/src/serial.cpp
 cassert
 -
 console_bridge/console.h
@@ -152,7 +152,7 @@ mavconn/thread_utils.h
 mavconn/serial.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/src/tcp.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/src/tcp.cpp
 cassert
 -
 console_bridge/console.h
@@ -162,7 +162,7 @@ mavconn/thread_utils.h
 mavconn/tcp.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/src/udp.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/src/udp.cpp
 cassert
 -
 console_bridge/console.h

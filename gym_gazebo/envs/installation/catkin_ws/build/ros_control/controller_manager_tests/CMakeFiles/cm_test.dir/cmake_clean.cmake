@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cm_test.dir/test/cm_test.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/controller_manager_tests/cm_test.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/controller_manager_tests/cm_test"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/controller_manager_tests/cm_test.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/controller_manager_tests/cm_test"
 )
 
 # Per-language clean rules from dependency scanning.

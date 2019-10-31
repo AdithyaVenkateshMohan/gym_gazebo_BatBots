@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/yocs_msgs_gencfg"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/JoystickConfig.h"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/yocs_msgs/docs/JoystickConfig.dox"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/yocs_msgs/docs/JoystickConfig-usage.dox"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/python2.7/dist-packages/yocs_msgs/cfg/JoystickConfig.py"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/yocs_msgs/docs/JoystickConfig.wikidoc"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/JoystickConfig.h"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/yocs_msgs/docs/JoystickConfig.dox"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/yocs_msgs/docs/JoystickConfig-usage.dox"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/python2.7/dist-packages/yocs_msgs/cfg/JoystickConfig.py"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/yocs_msgs/docs/JoystickConfig.wikidoc"
 )
 
 # Per-language clean rules from dependency scanning.

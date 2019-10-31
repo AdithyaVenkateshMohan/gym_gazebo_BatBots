@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/footprint_tests.dir/test/footprint_tests.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/costmap_2d/footprint_tests.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/costmap_2d/footprint_tests"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/costmap_2d/footprint_tests.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/costmap_2d/footprint_tests"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_rosPosePublisher/include/gazebo_rosPosePublisher/PosePublisher.hh
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_rosPosePublisher/include/gazebo_rosPosePublisher/PosePublisher.hh
 gazebo/common/Plugin.hh
 -
 ros/ros.h
 -
 geometry_msgs/Pose.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_rosPosePublisher/include/gazebo_rosPosePublisher/geometry_msgs/Pose.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_rosPosePublisher/include/gazebo_rosPosePublisher/geometry_msgs/Pose.h
 geometry_msgs/PoseStamped.h
 -
 ros/callback_queue.h
@@ -20,7 +20,7 @@ ros/callback_queue.h
 ros/advertise_options.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_rosPosePublisher/src/PosePublisher.cc
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_rosPosePublisher/src/PosePublisher.cc
 ignition/math/Pose3.hh
 -
 ignition/math/Rand.hh
@@ -34,13 +34,13 @@ geometry_msgs/Quaternion.h
 ros/ros.h
 -
 geometry_msgs/Pose.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_rosPosePublisher/src/geometry_msgs/Pose.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_rosPosePublisher/src/geometry_msgs/Pose.h
 geometry_msgs/PoseStamped.h
 -
 std_msgs/Header.h
 -
 gazebo_rosPosePublisher/PosePublisher.hh
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_rosPosePublisher/src/gazebo_rosPosePublisher/PosePublisher.hh
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/gazebo_rosPosePublisher/src/gazebo_rosPosePublisher/PosePublisher.hh
 
 /opt/ros/kinetic/include/boost_161_condition_variable.h
 boost/thread/detail/platform.hpp

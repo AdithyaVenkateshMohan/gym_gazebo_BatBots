@@ -4,7 +4,7 @@ endif()
 set(_ROSLINT_EXTRAS_INCLUDED_ TRUE)
 
 # bin and template dir variables in develspace
-set(ROSLINT_SCRIPTS_DIR "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/roslint/scripts")
+set(ROSLINT_SCRIPTS_DIR "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/roslint/scripts")
 
 macro(_roslint_create_targets)
   # Create the master "roslint" target if it doesn't exist yet.

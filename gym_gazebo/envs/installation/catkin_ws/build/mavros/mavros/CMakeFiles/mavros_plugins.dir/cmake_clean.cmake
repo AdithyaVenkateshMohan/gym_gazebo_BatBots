@@ -21,8 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mavros_plugins.dir/src/plugins/actuator_control.cpp.o"
   "CMakeFiles/mavros_plugins.dir/src/plugins/manual_control.cpp.o"
   "CMakeFiles/mavros_plugins.dir/src/plugins/altitude.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/libmavros_plugins.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/libmavros_plugins.so"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/libmavros_plugins.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/libmavros_plugins.so"
 )
 
 # Per-language clean rules from dependency scanning.

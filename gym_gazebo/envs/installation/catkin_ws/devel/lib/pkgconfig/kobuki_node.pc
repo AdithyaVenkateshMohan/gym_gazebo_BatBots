@@ -1,8 +1,8 @@
-prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel
+prefix=/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel
 
 Name: kobuki_node
 Description: Description of kobuki_node
 Version: 0.6.8
-Cflags: -I/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki/kobuki_node/include
-Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib -lkobuki_ros -lkobuki_nodelet
+Cflags: -I/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki/kobuki_node/include
+Libs: -L/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib -lkobuki_ros -lkobuki_nodelet
 Requires: rospy roscpp nodelet pluginlib tf angles geometry_msgs sensor_msgs nav_msgs std_msgs diagnostic_updater diagnostic_msgs kobuki_msgs kobuki_driver kobuki_keyop kobuki_safety_controller ecl_exceptions ecl_sigslots ecl_streams ecl_threads

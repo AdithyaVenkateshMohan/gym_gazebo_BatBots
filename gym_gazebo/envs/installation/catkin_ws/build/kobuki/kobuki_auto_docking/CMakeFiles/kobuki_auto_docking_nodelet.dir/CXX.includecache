@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingAction.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingAction.h
 string
 -
 vector
@@ -28,7 +28,7 @@ kobuki_msgs/AutoDockingActionResult.h
 kobuki_msgs/AutoDockingActionFeedback.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingActionFeedback.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingActionFeedback.h
 string
 -
 vector
@@ -50,7 +50,7 @@ actionlib_msgs/GoalStatus.h
 kobuki_msgs/AutoDockingFeedback.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingActionGoal.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingActionGoal.h
 string
 -
 vector
@@ -72,7 +72,7 @@ actionlib_msgs/GoalID.h
 kobuki_msgs/AutoDockingGoal.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingActionResult.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingActionResult.h
 string
 -
 vector
@@ -94,7 +94,7 @@ actionlib_msgs/GoalStatus.h
 kobuki_msgs/AutoDockingResult.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingFeedback.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingFeedback.h
 string
 -
 vector
@@ -110,7 +110,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingGoal.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingGoal.h
 string
 -
 vector
@@ -126,7 +126,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingResult.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/AutoDockingResult.h
 string
 -
 vector
@@ -142,25 +142,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/DockInfraRed.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-std_msgs/Header.h
--
-
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/SensorState.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/DockInfraRed.h
 string
 -
 vector
@@ -178,7 +160,25 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki/kobuki_auto_docking/include/kobuki_auto_docking/auto_docking_ros.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/kobuki_msgs/SensorState.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki/kobuki_auto_docking/include/kobuki_auto_docking/auto_docking_ros.hpp
 ros/ros.h
 -
 actionlib/server/simple_action_server.h
@@ -216,7 +216,7 @@ kdl_conversions/kdl_msg.h
 kobuki_dock_drive/dock_drive.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki/kobuki_auto_docking/src/nodelet.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki/kobuki_auto_docking/src/nodelet.cpp
 nodelet/nodelet.h
 -
 pluginlib/class_list_macros.h
@@ -224,9 +224,9 @@ pluginlib/class_list_macros.h
 ecl/threads/thread.hpp
 -
 kobuki_auto_docking/auto_docking_ros.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki/kobuki_auto_docking/src/kobuki_auto_docking/auto_docking_ros.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki/kobuki_auto_docking/src/kobuki_auto_docking/auto_docking_ros.hpp
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_dock_drive/include/kobuki_dock_drive/dock_drive.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_dock_drive/include/kobuki_dock_drive/dock_drive.hpp
 iostream
 -
 sstream
@@ -242,9 +242,9 @@ ecl/geometry/legacy_pose2d.hpp
 ecl/linear_algebra.hpp
 -
 kobuki_dock_drive/state.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_dock_drive/include/kobuki_dock_drive/kobuki_dock_drive/state.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_dock_drive/include/kobuki_dock_drive/kobuki_dock_drive/state.hpp
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_dock_drive/include/kobuki_dock_drive/state.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/kobuki_core/kobuki_dock_drive/include/kobuki_dock_drive/state.hpp
 iostream
 -
 

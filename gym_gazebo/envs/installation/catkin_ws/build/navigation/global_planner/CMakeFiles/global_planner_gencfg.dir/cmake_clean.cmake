@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/global_planner_gencfg"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/global_planner/GlobalPlannerConfig.h"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/global_planner/docs/GlobalPlannerConfig.dox"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/global_planner/docs/GlobalPlannerConfig-usage.dox"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/python2.7/dist-packages/global_planner/cfg/GlobalPlannerConfig.py"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/global_planner/docs/GlobalPlannerConfig.wikidoc"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/global_planner/GlobalPlannerConfig.h"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/global_planner/docs/GlobalPlannerConfig.dox"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/global_planner/docs/GlobalPlannerConfig-usage.dox"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/python2.7/dist-packages/global_planner/cfg/GlobalPlannerConfig.py"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/global_planner/docs/GlobalPlannerConfig.wikidoc"
 )
 
 # Per-language clean rules from dependency scanning.

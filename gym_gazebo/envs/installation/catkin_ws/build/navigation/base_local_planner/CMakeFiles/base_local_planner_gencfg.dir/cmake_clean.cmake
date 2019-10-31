@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/base_local_planner_gencfg"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/base_local_planner/BaseLocalPlannerConfig.h"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/base_local_planner/docs/BaseLocalPlannerConfig.dox"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/base_local_planner/docs/BaseLocalPlannerConfig-usage.dox"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/python2.7/dist-packages/base_local_planner/cfg/BaseLocalPlannerConfig.py"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/base_local_planner/docs/BaseLocalPlannerConfig.wikidoc"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/base_local_planner/BaseLocalPlannerConfig.h"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/base_local_planner/docs/BaseLocalPlannerConfig.dox"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/base_local_planner/docs/BaseLocalPlannerConfig-usage.dox"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/python2.7/dist-packages/base_local_planner/cfg/BaseLocalPlannerConfig.py"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/base_local_planner/docs/BaseLocalPlannerConfig.wikidoc"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/include/pcl_ros/impl/transforms.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/include/pcl_ros/impl/transforms.hpp
 pcl_conversions/pcl_conversions.h
 -
 pcl_ros/transforms.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/include/pcl_ros/impl/pcl_ros/transforms.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/include/pcl_ros/impl/pcl_ros/transforms.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/include/pcl_ros/transforms.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/include/pcl_ros/transforms.h
 sensor_msgs/PointCloud2.h
 -
 pcl/common/transforms.h
@@ -22,7 +22,7 @@ tf/transform_datatypes.h
 tf/transform_listener.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/src/transforms.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/src/transforms.cpp
 sensor_msgs/PointCloud2.h
 -
 pcl/common/io.h
@@ -32,9 +32,9 @@ pcl/point_types.h
 pcl_conversions/pcl_conversions.h
 -
 pcl_ros/transforms.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/src/pcl_ros/transforms.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/src/pcl_ros/transforms.h
 pcl_ros/impl/transforms.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/src/pcl_ros/impl/transforms.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/src/pcl_ros/impl/transforms.hpp
 
 /opt/ros/kinetic/include/boost_161_condition_variable.h
 boost/thread/detail/platform.hpp

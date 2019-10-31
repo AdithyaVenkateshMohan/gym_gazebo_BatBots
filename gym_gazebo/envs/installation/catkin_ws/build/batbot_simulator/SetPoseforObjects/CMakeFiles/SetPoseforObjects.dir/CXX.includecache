@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,57 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/SetPoseforObjects/MoveToPtr.h
-ros/service_traits.h
--
-SetPoseforObjects/MoveToPtrRequest.h
--
-SetPoseforObjects/MoveToPtrResponse.h
--
-
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/SetPoseforObjects/MoveToPtrRequest.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-geometry_msgs/Pose.h
--
-
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/SetPoseforObjects/MoveToPtrResponse.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/SetPoseforObjects/include/SetPoseforObjects/SetPoseforObjects.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/SetPoseforObjects/include/SetPoseforObjects/SetPoseforObjects.h
 gazebo/common/Plugin.hh
 -
 SetPoseforObjects/MoveToPtr.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/SetPoseforObjects/include/SetPoseforObjects/SetPoseforObjects/MoveToPtr.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/SetPoseforObjects/include/SetPoseforObjects/SetPoseforObjects/MoveToPtr.h
 ros/ros.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/SetPoseforObjects/src/SetPoseforObjects.cc
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/SetPoseforObjects/src/SetPoseforObjects.cc
 ignition/math/Pose3.hh
 -
 ignition/math/Rand.hh
@@ -66,59 +24,7 @@ gazebo/physics/physics.hh
 ros/ros.h
 -
 SetPoseforObjects/SetPoseforObjects.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/SetPoseforObjects/src/SetPoseforObjects/SetPoseforObjects.h
-
-/opt/ros/kinetic/include/geometry_msgs/Point.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
-/opt/ros/kinetic/include/geometry_msgs/Pose.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-geometry_msgs/Point.h
--
-geometry_msgs/Quaternion.h
--
-
-/opt/ros/kinetic/include/geometry_msgs/Quaternion.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/batbot_simulator/SetPoseforObjects/src/SetPoseforObjects/SetPoseforObjects.h
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h
@@ -326,10 +232,6 @@ boost/make_shared.hpp
 cstddef
 -
 memory
--
-
-/opt/ros/kinetic/include/ros/message_operations.h
-ostream
 -
 
 /opt/ros/kinetic/include/ros/message_traits.h

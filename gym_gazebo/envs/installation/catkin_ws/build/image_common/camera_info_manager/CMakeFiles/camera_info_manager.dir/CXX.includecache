@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/include/camera_calibration_parsers/parse.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_calibration_parsers/include/camera_calibration_parsers/parse.h
 string
 -
 sensor_msgs/CameraInfo.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_info_manager/src/camera_info_manager.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_info_manager/src/camera_info_manager.cpp
 string
 -
 locale
@@ -34,7 +34,7 @@ boost/algorithm/string.hpp
 camera_calibration_parsers/parse.h
 -
 camera_info_manager/camera_info_manager.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_info_manager/src/camera_info_manager/camera_info_manager.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/image_common/camera_info_manager/src/camera_info_manager/camera_info_manager.h
 
 /opt/ros/kinetic/include/camera_info_manager/camera_info_manager.h
 ros/ros.h

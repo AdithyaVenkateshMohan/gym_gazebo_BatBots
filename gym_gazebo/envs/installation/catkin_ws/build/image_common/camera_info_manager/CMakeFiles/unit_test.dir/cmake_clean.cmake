@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/unit_test.dir/tests/unit_test.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/camera_info_manager/unit_test.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/camera_info_manager/unit_test"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/camera_info_manager/unit_test.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/camera_info_manager/unit_test"
 )
 
 # Per-language clean rules from dependency scanning.

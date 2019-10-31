@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/include/pcl_ros/publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/include/pcl_ros/publisher.h
 ros/ros.h
 -
 sensor_msgs/PointCloud2.h
@@ -16,7 +16,7 @@ pcl/conversions.h
 pcl_conversions/pcl_conversions.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/tools/pcd_to_pointcloud.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/tools/pcd_to_pointcloud.cpp
 ros/ros.h
 -
 pcl/io/io.h
@@ -28,7 +28,7 @@ pcl/point_types.h
 pcl_conversions/pcl_conversions.h
 -
 pcl_ros/publisher.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/tools/pcl_ros/publisher.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/pcl_ros/pcl_ros/tools/pcl_ros/publisher.h
 
 /opt/ros/kinetic/include/pcl_conversions/pcl_conversions.h
 vector

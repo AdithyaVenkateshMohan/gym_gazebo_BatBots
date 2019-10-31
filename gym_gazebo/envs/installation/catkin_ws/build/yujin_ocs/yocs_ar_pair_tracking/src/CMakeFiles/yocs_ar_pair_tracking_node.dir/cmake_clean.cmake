@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/yocs_ar_pair_tracking_node.dir/main.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/yocs_ar_pair_tracking/yocs_ar_pair_tracking_node.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/yocs_ar_pair_tracking/yocs_ar_pair_tracking_node"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/yocs_ar_pair_tracking/yocs_ar_pair_tracking_node.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/yocs_ar_pair_tracking/yocs_ar_pair_tracking_node"
 )
 
 # Per-language clean rules from dependency scanning.

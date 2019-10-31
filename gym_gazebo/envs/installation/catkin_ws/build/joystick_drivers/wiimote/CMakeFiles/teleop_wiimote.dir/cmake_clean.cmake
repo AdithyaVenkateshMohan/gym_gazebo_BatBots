@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/teleop_wiimote.dir/src/teleop_wiimote.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/wiimote/teleop_wiimote.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/wiimote/teleop_wiimote"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/wiimote/teleop_wiimote.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/wiimote/teleop_wiimote"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/mavros_msgs/Mavlink.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/mavros_msgs/Mavlink.h
 string
 -
 vector
@@ -24,7 +24,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/interface.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/interface.h
 boost/bind.hpp
 -
 boost/signals2.hpp
@@ -54,7 +54,7 @@ stdexcept
 mavconn/mavlink_dialect.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/mavlink_dialect.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/mavlink_dialect.h
 mavlink/v1.0/mavlink_types.h
 -
 mavlink/v1.0/ardupilotmega/mavlink.h
@@ -82,7 +82,7 @@ mavlink/v1.0/ASLUAV/mavlink.h
 mavlink/v1.0/paparazzi/mavlink.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/thread_utils.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/libmavconn/include/mavconn/thread_utils.h
 thread
 -
 cstdio
@@ -94,13 +94,13 @@ cstdarg
 pthread.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/mavlink_diag.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/mavlink_diag.h
 diagnostic_updater/diagnostic_updater.h
 -
 mavconn/interface.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/mavros.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/mavros.h
 array
 -
 ros/ros.h
@@ -116,7 +116,7 @@ mavros/mavlink_diag.h
 mavros/utils.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/mavros_plugin.h
 map
 -
 diagnostic_updater/diagnostic_updater.h
@@ -126,7 +126,7 @@ mavconn/interface.h
 mavros/mavros_uas.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/mavros_uas.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/mavros_uas.h
 array
 -
 mutex
@@ -150,19 +150,19 @@ sensor_msgs/Imu.h
 sensor_msgs/NavSatFix.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/px4_custom_mode.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/px4_custom_mode.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/utils.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/include/mavros/utils.h
 mavconn/thread_utils.h
 -
 mavros_msgs/mavlink_convert.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/mavlink_diag.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/mavlink_diag.cpp
 mavros/mavlink_diag.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/mavros.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/mavros.cpp
 mavros/mavros.h
 -
 ros/console.h
@@ -174,11 +174,11 @@ fnmatch.h
 mavlink/config.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/rosconsole_bridge.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/rosconsole_bridge.cpp
 rosconsole_bridge/bridge.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/uas_data.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/uas_data.cpp
 array
 -
 unordered_map
@@ -192,37 +192,23 @@ mavros/utils.h
 mavros/px4_custom_mode.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/uas_frame_conversions.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/uas_frame_conversions.cpp
 array
 -
 mavros/mavros_uas.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/uas_quaternion_utils.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/uas_quaternion_utils.cpp
 mavros/mavros_uas.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/uas_sensor_orientation.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/uas_sensor_orientation.cpp
 array
 -
 mavros/mavros_uas.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/uas_stringify.cpp
-array
--
-unordered_map
--
-stdexcept
--
-mavros/mavros_uas.h
--
-mavros/utils.h
--
-mavros/px4_custom_mode.h
--
-
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/uas_timesync.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/uas_stringify.cpp
 array
 -
 unordered_map
@@ -236,7 +222,21 @@ mavros/utils.h
 mavros/px4_custom_mode.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros/src/lib/uas_timesync.cpp
+array
+-
+unordered_map
+-
+stdexcept
+-
+mavros/mavros_uas.h
+-
+mavros/utils.h
+-
+mavros/px4_custom_mode.h
+-
+
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/mavros/mavros_msgs/include/mavros_msgs/mavlink_convert.h
 algorithm
 -
 mavros_msgs/Mavlink.h

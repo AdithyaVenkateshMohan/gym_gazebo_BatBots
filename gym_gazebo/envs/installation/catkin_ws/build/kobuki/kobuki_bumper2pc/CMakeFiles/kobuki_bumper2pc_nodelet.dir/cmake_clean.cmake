@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/kobuki_bumper2pc_nodelet.dir/src/kobuki_bumper2pc.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/libkobuki_bumper2pc_nodelet.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/libkobuki_bumper2pc_nodelet.so"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/libkobuki_bumper2pc_nodelet.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/libkobuki_bumper2pc_nodelet.so"
 )
 
 # Per-language clean rules from dependency scanning.

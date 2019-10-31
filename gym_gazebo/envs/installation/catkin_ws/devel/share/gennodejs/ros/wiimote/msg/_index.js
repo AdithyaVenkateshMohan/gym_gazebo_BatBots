@@ -1,12 +1,12 @@
 
 "use strict";
 
-let IrSourceInfo = require('./IrSourceInfo.js');
 let State = require('./State.js');
+let IrSourceInfo = require('./IrSourceInfo.js');
 let TimedSwitch = require('./TimedSwitch.js');
 
 module.exports = {
-  IrSourceInfo: IrSourceInfo,
   State: State,
+  IrSourceInfo: IrSourceInfo,
   TimedSwitch: TimedSwitch,
 };

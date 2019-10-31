@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/joyop.dir/src/joyop.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/yocs_joyop/joyop.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/yocs_joyop/joyop"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/yocs_joyop/joyop.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/yocs_joyop/joyop"
 )
 
 # Per-language clean rules from dependency scanning.

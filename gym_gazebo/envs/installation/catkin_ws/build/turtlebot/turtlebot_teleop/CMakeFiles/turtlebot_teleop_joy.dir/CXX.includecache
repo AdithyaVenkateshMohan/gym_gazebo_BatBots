@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/turtlebot/turtlebot_teleop/src/turtlebot_joy.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/turtlebot/turtlebot_teleop/src/turtlebot_joy.cpp
 ros/ros.h
 -
 geometry_msgs/Twist.h
@@ -14,11 +14,11 @@ geometry_msgs/Twist.h
 sensor_msgs/Joy.h
 -
 boost/thread/mutex.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/turtlebot/turtlebot_teleop/src/boost/thread/mutex.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/turtlebot/turtlebot_teleop/src/boost/thread/mutex.hpp
 boost/thread/thread.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/turtlebot/turtlebot_teleop/src/boost/thread/thread.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/turtlebot/turtlebot_teleop/src/boost/thread/thread.hpp
 ros/console.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/turtlebot/turtlebot_teleop/src/ros/console.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/turtlebot/turtlebot_teleop/src/ros/console.h
 
 /opt/ros/kinetic/include/geometry_msgs/Twist.h
 string

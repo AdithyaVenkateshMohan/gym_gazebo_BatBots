@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pub_joint_trajectory_test.dir/test/pub_joint_trajectory_test.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/gazebo_plugins/pub_joint_trajectory_test.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/gazebo_plugins/pub_joint_trajectory_test"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/gazebo_plugins/pub_joint_trajectory_test.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/gazebo_plugins/pub_joint_trajectory_test"
 )
 
 # Per-language clean rules from dependency scanning.

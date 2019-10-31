@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/control_toolbox/ParametersConfig.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/control_toolbox/ParametersConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -24,7 +24,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/control_toolbox/SetPidGains.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/control_toolbox/SetPidGains.h
 ros/service_traits.h
 -
 control_toolbox/SetPidGainsRequest.h
@@ -32,7 +32,7 @@ control_toolbox/SetPidGainsRequest.h
 control_toolbox/SetPidGainsResponse.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/control_toolbox/SetPidGainsRequest.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/control_toolbox/SetPidGainsRequest.h
 string
 -
 vector
@@ -48,7 +48,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/control_toolbox/SetPidGainsResponse.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/control_toolbox/SetPidGainsResponse.h
 string
 -
 vector
@@ -64,7 +64,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/dither.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/dither.h
 cstdlib
 -
 ctime
@@ -74,9 +74,9 @@ math.h
 ros/ros.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/limited_proxy.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/limited_proxy.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/pid.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/pid.h
 string
 -
 ros/ros.h
@@ -90,33 +90,33 @@ boost/thread/mutex.hpp
 realtime_tools/realtime_buffer.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/pid_gains_setter.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/pid_gains_setter.h
 vector
 -
 string
 -
 ros/node_handle.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/ros/node_handle.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/ros/node_handle.h
 control_toolbox/pid.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/control_toolbox/pid.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/control_toolbox/pid.h
 control_toolbox/SetPidGains.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/control_toolbox/SetPidGains.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/control_toolbox/SetPidGains.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/sine_sweep.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/sine_sweep.h
 ros/ros.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/sinusoid.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/include/control_toolbox/sinusoid.h
 iostream
 -
 tinyxml.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/dither.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/dither.cpp
 control_toolbox/dither.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/limited_proxy.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/limited_proxy.cpp
 control_toolbox/limited_proxy.h
 -
 algorithm
@@ -126,31 +126,31 @@ cmath
 cstdlib
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/pid.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/pid.cpp
 control_toolbox/pid.h
 -
 tinyxml.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/pid_gains_setter.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/pid_gains_setter.cpp
 control_toolbox/pid_gains_setter.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/control_toolbox/pid_gains_setter.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/control_toolbox/pid_gains_setter.h
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/sine_sweep.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/sine_sweep.cpp
 math.h
 -
 control_toolbox/sine_sweep.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/sinusoid.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/sinusoid.cpp
 control_toolbox/sinusoid.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/control_toolbox/sinusoid.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/control_toolbox/src/control_toolbox/sinusoid.h
 cmath
 -
 iostream
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/realtime_tools/include/realtime_tools/realtime_buffer.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/realtime_tools/include/realtime_tools/realtime_buffer.h
 boost/thread/mutex.hpp
 -
 

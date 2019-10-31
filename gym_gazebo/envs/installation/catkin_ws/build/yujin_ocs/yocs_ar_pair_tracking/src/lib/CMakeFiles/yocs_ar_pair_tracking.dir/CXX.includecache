@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/ARPair.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/ARPair.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/ARPairList.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_msgs/ARPairList.h
 string
 -
 vector
@@ -40,7 +40,7 @@ ros/message_operations.h
 yocs_msgs/ARPair.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_ar_marker_tracking/include/yocs_ar_marker_tracking/tracking.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_ar_marker_tracking/include/yocs_ar_marker_tracking/tracking.hpp
 ros/ros.h
 -
 yocs_math_toolkit/common.hpp
@@ -52,7 +52,7 @@ geometry_msgs/PoseWithCovarianceStamped.h
 ar_track_alvar_msgs/AlvarMarkers.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_ar_pair_tracking/include/yocs_ar_pair_tracking/tracking.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_ar_pair_tracking/include/yocs_ar_pair_tracking/tracking.hpp
 ros/ros.h
 -
 tf/tf.h
@@ -74,13 +74,13 @@ yocs_msgs/ARPair.h
 yocs_msgs/ARPairList.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_ar_pair_tracking/src/lib/tracking.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_ar_pair_tracking/src/lib/tracking.cpp
 yocs_ar_pair_tracking/tracking.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_ar_pair_tracking/src/lib/yocs_ar_pair_tracking/tracking.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_ar_pair_tracking/src/lib/yocs_ar_pair_tracking/tracking.hpp
 std_msgs/String.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_math_toolkit/include/yocs_math_toolkit/common.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_math_toolkit/include/yocs_math_toolkit/common.hpp
 tf/tf.h
 -
 geometry_msgs/Pose.h
@@ -92,7 +92,7 @@ ecl/config/macros.hpp
 ecl/config/macros.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_math_toolkit/include/yocs_math_toolkit/geometry.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_math_toolkit/include/yocs_math_toolkit/geometry.hpp
 tf/tf.h
 -
 geometry_msgs/Pose.h

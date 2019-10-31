@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_ros_gencfg"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/gazebo_ros/PhysicsConfig.h"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/gazebo_ros/docs/PhysicsConfig.dox"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/gazebo_ros/docs/PhysicsConfig-usage.dox"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/python2.7/dist-packages/gazebo_ros/cfg/PhysicsConfig.py"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/share/gazebo_ros/docs/PhysicsConfig.wikidoc"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/gazebo_ros/PhysicsConfig.h"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/gazebo_ros/docs/PhysicsConfig.dox"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/gazebo_ros/docs/PhysicsConfig-usage.dox"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/python2.7/dist-packages/gazebo_ros/cfg/PhysicsConfig.py"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/share/gazebo_ros/docs/PhysicsConfig.wikidoc"
 )
 
 # Per-language clean rules from dependency scanning.

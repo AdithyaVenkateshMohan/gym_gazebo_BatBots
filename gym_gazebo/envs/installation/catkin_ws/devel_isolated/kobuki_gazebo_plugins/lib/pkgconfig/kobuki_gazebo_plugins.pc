@@ -1,8 +1,0 @@
-prefix=/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel_isolated/kobuki_gazebo_plugins
-
-Name: kobuki_gazebo_plugins
-Description: Description of kobuki_gazebo_plugins
-Version: 0.4.2
-Cflags: -I/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/kobuki_desktop/kobuki_gazebo_plugins/include
-Libs: -L/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel_isolated/kobuki_gazebo_plugins/lib -lgazebo_ros_kobuki
-Requires: gazebo_ros gazebo_plugins geometry_msgs kobuki_msgs nav_msgs roscpp sensor_msgs std_msgs tf

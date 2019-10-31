@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/reset_device.dir/reset_device.cpp.o"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/kobuki_ftdi/reset_device.pdb"
-  "/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/lib/kobuki_ftdi/reset_device"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/kobuki_ftdi/reset_device.pdb"
+  "/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/lib/kobuki_ftdi/reset_device"
 )
 
 # Per-language clean rules from dependency scanning.

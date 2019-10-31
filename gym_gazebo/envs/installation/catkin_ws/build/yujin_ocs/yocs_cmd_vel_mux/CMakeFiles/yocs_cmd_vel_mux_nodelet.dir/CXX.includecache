@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_cmd_vel_mux/reloadConfig.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/devel/include/yocs_cmd_vel_mux/reloadConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -24,7 +24,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/include/yocs_cmd_vel_mux/cmd_vel_mux_nodelet.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/include/yocs_cmd_vel_mux/cmd_vel_mux_nodelet.hpp
 ros/ros.h
 -
 nodelet/nodelet.h
@@ -32,11 +32,11 @@ nodelet/nodelet.h
 dynamic_reconfigure/server.h
 -
 yocs_cmd_vel_mux/reloadConfig.h
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/include/yocs_cmd_vel_mux/yocs_cmd_vel_mux/reloadConfig.h
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/include/yocs_cmd_vel_mux/yocs_cmd_vel_mux/reloadConfig.h
 yocs_cmd_vel_mux/cmd_vel_subscribers.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/include/yocs_cmd_vel_mux/yocs_cmd_vel_mux/cmd_vel_subscribers.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/include/yocs_cmd_vel_mux/yocs_cmd_vel_mux/cmd_vel_subscribers.hpp
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/include/yocs_cmd_vel_mux/cmd_vel_subscribers.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/include/yocs_cmd_vel_mux/cmd_vel_subscribers.hpp
 ros/ros.h
 -
 geometry_msgs/Twist.h
@@ -44,11 +44,11 @@ geometry_msgs/Twist.h
 yaml-cpp/yaml.h
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/include/yocs_cmd_vel_mux/exceptions.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/include/yocs_cmd_vel_mux/exceptions.hpp
 exception
 -
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/src/cmd_vel_mux_nodelet.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/src/cmd_vel_mux_nodelet.cpp
 fstream
 -
 std_msgs/String.h
@@ -56,17 +56,17 @@ std_msgs/String.h
 pluginlib/class_list_macros.h
 -
 yocs_cmd_vel_mux/cmd_vel_mux_nodelet.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/src/yocs_cmd_vel_mux/cmd_vel_mux_nodelet.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/src/yocs_cmd_vel_mux/cmd_vel_mux_nodelet.hpp
 yocs_cmd_vel_mux/exceptions.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/src/yocs_cmd_vel_mux/exceptions.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/src/yocs_cmd_vel_mux/exceptions.hpp
 
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/src/cmd_vel_subscribers.cpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/src/cmd_vel_subscribers.cpp
 fstream
 -
 yocs_cmd_vel_mux/cmd_vel_subscribers.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/src/yocs_cmd_vel_mux/cmd_vel_subscribers.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/src/yocs_cmd_vel_mux/cmd_vel_subscribers.hpp
 yocs_cmd_vel_mux/exceptions.hpp
-/home/adithya/ReinfLearn/gym/gym-gazebo/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/src/yocs_cmd_vel_mux/exceptions.hpp
+/home/caplab/Batbots/gymBatbot/gym_gazebo_BatBots/gym_gazebo/envs/installation/catkin_ws/src/yujin_ocs/yocs_cmd_vel_mux/src/yocs_cmd_vel_mux/exceptions.hpp
 
 /opt/ros/kinetic/include/class_loader/./class_loader.hpp
 boost/bind.hpp
