@@ -127,7 +127,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         #resetting velocities just in case
         self.reset_velocities()
         # getting the first observation
-        observation = self.get_observationEnv()
+        observation , echo_time = self.get_observationEnv()
         # the gazebo engine is paused 
         self.gazebo_pipe.pauseSim()
         
@@ -153,7 +153,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
                 Cloudobservation  = rospy.wait_for_message(self.observation_topic , PointCloud , timeout= self.timeout)
             except:
                 rospy.loginfo("exception raised at getting observation of the polar cloud from topic", self.observation_topic)
-        print("cloud points used for observation ", Cloudobservation.points)
+        #print("cloud points used for observation ", Cloudobservation.points)
         echo_pulse,echo_time = self.echoes_genration(Cloudobservation.points)
 
         return echo_pulse, echo_time
@@ -170,14 +170,14 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
                 rospy.loginfo("exception raised at getting laser scan from topic", self.observation_topic)
             
         ranges = LaserscanRange.ranges
-        print("the ranges of the bat", ranges)
+        #print("the ranges of the bat", ranges)
         minRange = -1
         for r in ranges:
             if minRange == -1:
                 minRange = r
             elif minRange > r:
                 minRange = r
-        print("the nearest obstacle is at ", minRange)
+        #print("the nearest obstacle is at ", minRange)
         if minRange < AVOIDANCE_DISTANCE:
             reward = 1
         else:
