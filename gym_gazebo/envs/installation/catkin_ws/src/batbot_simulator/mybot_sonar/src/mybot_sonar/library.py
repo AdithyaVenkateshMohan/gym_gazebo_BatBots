@@ -36,7 +36,7 @@ def gca(azimuth1, elevation1, azimuth2, elevation2):
 
 def pistonmodel(freq, radius=0):
     pi = numpy.pi
-    angles = numpy.linspace(-pi / 2, pi / 2, 100)
+    angles = numpy.linspace(-pi , pi , 200)
     if radius == 0: radius = 0.014
     wavelength = 340.29 / freq
     K = 2 * pi / wavelength

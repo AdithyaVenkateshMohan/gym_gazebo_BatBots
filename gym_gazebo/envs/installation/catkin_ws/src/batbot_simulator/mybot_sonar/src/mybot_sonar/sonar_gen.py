@@ -314,7 +314,7 @@ def echo_genration_for_observation(pc_list):
     azimuths = numpy.array([])
     elevations = numpy.array([])
     distances = numpy.array([])
-    print("single point", pc_list[0],"no of points", len(pc_list))
+    #print("single point", pc_list[0],"no of points", len(pc_list))
     for p in pc_list:
         #print(p)
         distances = numpy.append(distances, p.x)
@@ -322,12 +322,14 @@ def echo_genration_for_observation(pc_list):
         elevations = numpy.append(elevations, math.degrees(p.z))
     
 
-    print("most near by dist", numpy.min(distances))
+    #print("most near by dist", numpy.min(distances))
 
     # if not we didn't recive any points    
     assert(distances.size > 0)
 
     echo_sequence , impulse_time = echo_gen_with_ears(distances , azimuths , elevations)
+
+    
 
     return echo_sequence , impulse_time 
 
@@ -336,8 +338,8 @@ def echo_gen_with_ears(distances , azimuths , elevations):
     # this for simulating the directionality between the ears
     # adding and substracting to azimuths based on the ears
     # this means the left ear gives more preference to points on left than that of right and viceversa for rightear
-    left_azimuth = azimuths + 0
-    right_azimuth = azimuths - 0
+    left_azimuth = azimuths + 10
+    right_azimuth = azimuths - 10
     sample_frequency = 125000
     emission_level = 100
     emission_duration = 0.0025
@@ -396,6 +398,8 @@ def echo_gen_with_ears(distances , azimuths , elevations):
     # Make echo sequence
     echo_sequence_l = numpy.convolve(emission, impulse_response_l, mode='same')
     echo_sequence_r = numpy.convolve(emission, impulse_response_r, mode='same')
+
+    
 
     echo_sequence = (echo_sequence_l , echo_sequence_r)
 

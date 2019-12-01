@@ -40,25 +40,27 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         self.default_velocity.angular.x =0
         self.default_velocity.angular.y =0
         self.default_velocity.angular.z =0
+        
 
         # actions timestep which the time for which the action selected is excuted
-        self.action_timeStep = 0.5
+        self.action_timeStep = 0.08
         # actions velocity is the velocity at which selected action is excuted
-        self.action_velocity = 0.05
+        self.action_velocity = 0.1
 
         #common timeout constant that we wait for the data 
         self.timeout = 5
         
         #encoded actions
         self.straight = 0
-        self.back = 1
+        self.back = 3
         self.right = 2
-        self.left = 3
+        self.left = 1
         #param for calulating rewards
         # so it's good for the robot to stay from 4 to 6 units away from the wall
         # for the wall following behav not more not less 
 
         self.distance_fromWall = 0.7
+        self.damage_distance = 0.4
         self.deltaDistance = 1
         # defining the the reward range
         self.reward_range = (-np.Inf , np.Inf)
@@ -68,6 +70,11 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         self.echoes_genration = sonar_gen.echo_genration_for_observation 
         # observation space is defined here
         self.observation_space = spaces.Box(low = -np.Inf , high = np.Inf , shape = (1,28000))
+        # damage_counter severs the purpose of damage in robot if it goes too close to the to many times it will DIEEE !!!
+
+        self.damage_counter = 0
+        self.t_per_episode = 300
+        self.t = 0
 
         # gazebo connection is established
         self.gazebo_pipe = GazeboConnection() 
@@ -85,6 +92,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         return [seed]
     
     def step(self, action):
+        self.t +=1
         # unpause the sim 
         self.gazebo_pipe.resumeSim()
         # velocity to be is selected according to the action variable
@@ -108,12 +116,12 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         
         echo , time  = self.get_observationEnv()
 
-        reward = self.get_reward()
+        reward , done = self.get_reward(action)
         # pause the sim 
         self.gazebo_pipe.pauseSim()
 
         # do somethng abt done
-        done = False
+        
 
         return echo , reward , done , {}
     
@@ -134,13 +142,13 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         return observation
     
     def checkalltopics_pubConnections(self):
-        rate = rospy.Rate(10)
+        rate = rospy.Rate(1000)
 
         while self.vel_pub.get_num_connections() == 0:
             rospy.loginfo("the vel_pub has zero connections so wait")
-            rate.sleep(10)
+            rate.sleep(0.000001)
 
-        rospy.loginfo("velocity vel_pub connection with the gazebo sim is connected succesfully")
+        #rospy.loginfo("velocity vel_pub connection with the gazebo sim is connected succesfully")
 
     def reset_velocities(self):
         self.vel_pub.publish(self.default_velocity)
@@ -153,21 +161,24 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
                 Cloudobservation  = rospy.wait_for_message(self.observation_topic , PointCloud , timeout= self.timeout)
             except:
                 rospy.loginfo("exception raised at getting observation of the polar cloud from topic", self.observation_topic)
+                Cloudobservation = None
         #print("cloud points used for observation ", Cloudobservation.points)
         echo_pulse,echo_time = self.echoes_genration(Cloudobservation.points)
 
         return echo_pulse, echo_time
 
     # this is where reward the agent should get is calulated 
-    def get_reward(self):
+    def get_reward(self , action):
         #this is not yet done have to work on reward function
         AVOIDANCE_DISTANCE = self.distance_fromWall
+        DEATH_DISTANCE = self.damage_distance
         LaserscanRange = None
         while LaserscanRange is None:
             try:
                 LaserscanRange  = rospy.wait_for_message(self.rewardsignal_topic , LaserScan , timeout= self.timeout)
             except:
                 rospy.loginfo("exception raised at getting laser scan from topic", self.observation_topic)
+                LaserscanRange = None
             
         ranges = LaserscanRange.ranges
         #print("the ranges of the bat", ranges)
@@ -178,13 +189,28 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
             elif minRange > r:
                 minRange = r
         #print("the nearest obstacle is at ", minRange)
-        if minRange < AVOIDANCE_DISTANCE:
-            reward = 1
+        if minRange >= AVOIDANCE_DISTANCE:
+            reward = 0.01
         else:
-            reward =-10
+            reward = -0.01 
+        
+        if minRange < DEATH_DISTANCE:
+            self.damage_counter += 1
+            #reward -= 0.05
 
+
+        done = (self.t % self.t_per_episode == 0 and self.t != 0)
+        if done:
+            self.damage_counter = 0
+        else:
+            pass
+            # giving the reward for being alive
+            # reward += 0.01
+        # reward based on action that it takes
+        if action == self.straight:
+            reward += 0.00
+        else:
+            reward -= 0.0
         
         #reward = 1
-        return reward
-    
-         
+        return reward , done 
