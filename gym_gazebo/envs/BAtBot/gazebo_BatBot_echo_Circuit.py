@@ -11,6 +11,7 @@ from std_msgs.msg import Empty , String
 from std_srvs.srv import Empty
 # this the echogenration lib which will be used to convert the point cloud data to 
 from mybot_sonar import sonar_gen 
+from mybot_sonar import Acoustics as ac 
 from ..gazeboconnection import GazeboConnection
 
 
