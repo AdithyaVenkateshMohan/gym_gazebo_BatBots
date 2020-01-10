@@ -1,3 +1,4 @@
+README.md
 setup.py
 gym_gazebo/__init__.py
 gym_gazebo/logger.py
@@ -16,6 +17,7 @@ gym_gazebo/envs/ARIAC/__init__.py
 gym_gazebo/envs/ARIAC/ariac_pick_v0.py
 gym_gazebo/envs/BAtBot/__init__.py
 gym_gazebo/envs/BAtBot/gazebo_BatBot_echo_Circuit.py
+gym_gazebo/envs/BAtBot/gazebo_BatBot_echo_energy_Circuit.py
 gym_gazebo/envs/MARA/__init__.py
 gym_gazebo/envs/MARA/gazebo_mara_no_gripper_v0.py
 gym_gazebo/envs/MARA/gazebo_mara_side_3dof_v0.py

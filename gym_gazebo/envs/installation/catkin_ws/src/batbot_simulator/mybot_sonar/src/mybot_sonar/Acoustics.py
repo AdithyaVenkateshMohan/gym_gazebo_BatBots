@@ -1,11 +1,14 @@
 import warnings
 import numpy
+import numpy as np
 import scipy.special as special
 from matplotlib import pyplot
 from scipy.interpolate import interp1d
 from scipy.signal import windows, chirp
 from scipy.ndimage.filters import gaussian_filter1d as gaussian
+import math
 
+import matplotlib.pyplot as plt
 
 def make_impulse_response(delays, echoes_pa, emission_duration, fs):
     duration = numpy.max(delays) + emission_duration
@@ -41,7 +44,7 @@ def gca(azimuth1, elevation1, azimuth2, elevation2):
 
 def pistonmodel(freq, radius=0):
     pi = numpy.pi
-    angles = numpy.linspace(-pi / 2, pi / 2, 100)
+    angles = numpy.linspace(-pi, pi, 100)
     if radius == 0: radius = 0.014
     wavelength = 340.29 / freq
     K = 2 * pi / wavelength
@@ -90,7 +93,7 @@ def signal_ramp(n, percent):
     return total
 
 
-def echo_gen_direct(distances, azimuths, elevations, sample_frequency=250000):
+def echo_gen_direct(distances, azimuths, elevations, sample_frequency=125000):
     emission_level = 100
     emission_duration = 0.0025
     emission_frequency = 40000
@@ -207,9 +210,9 @@ def plot_echo(return_value):
 
 
 
-def echo_genration_for_observation(pc_list):
+def echo_genration_for_observation(pc_list , obs_mode = "echo" , debug = False):
     #param for the echo generation
-    global i 
+     
     
 
     #####this is where i can give the input 
@@ -225,11 +228,13 @@ def echo_genration_for_observation(pc_list):
     
 
     #print("most near by dist", numpy.min(distances))
-
+    if debug: 
+            print("debug 3")
     # if not we didn't recive any points    
     assert(distances.size > 0)
 
-    echo_sequence , impulse_time = echo_gen_with_ears(distances , azimuths , elevations)
+    observation , impulse_time = echo_gen_with_ears(distances , azimuths , elevations , obs_type= obs_mode, debug= debug)
+    return observation , impulse_time
 
 
 def give_energy_windowed(echo_seq , start_time, sample_frequency = 125000, fixed_T = 0.001):
@@ -245,7 +250,7 @@ def give_energy_windowed(echo_seq , start_time, sample_frequency = 125000, fixed
 
         
     
-    energy = np.sum(np.pow(echo_seq[start_index:end],2))
+    energy = np.sum(np.power(echo_seq[start_index:end],2))
 
     return energy
 
@@ -258,28 +263,52 @@ def echo_gen_with_ears(distances , azimuths , elevations , obs_type = "echo" , d
     # this for simulating the directionality between the ears
     # adding and substracting to azimuths based on the ears
     # this means the left ear gives more preference to points on left than that of right and viceversa for rightear
+    
     left_azimuth = azimuths + 10
     right_azimuth = azimuths - 10
     
     echo_left = echo_gen_direct(distances, left_azimuth , elevations, sample_frequency= 125000)
     echo_right = echo_gen_direct(distances, right_azimuth , elevations, sample_frequency= 125000)
 
-    if obs_type == "echo"
-        echo_sequence_l = echo_left["echo_sequence"]
-        echo_sequence_r = echo_right["echo_sequence"]
-        impulse_time_l = echo_left['impulse_result']['impulse_response']
+    echo_sequence_l = echo_left["echo_sequence"]
+    echo_sequence_r = echo_right["echo_sequence"]
+    impulse_time_l = echo_left['impulse_result']['impulse_time']
+    impulse_time_r = echo_right['impulse_result']['impulse_time']
+
+    if debug:
+        print("plotting echoes...")
+        plt.figure(1)
+        plt.plot(echo_sequence_l)
+        plt.show()
+
+    if obs_type == "echo":
+        
         echo_sequence = (echo_sequence_l , echo_sequence_r)
         return echo_sequence, impulse_time_l
     
-    if obs_type == "energyies"
+    if obs_type == "eng":
         min_left_delay = min(echo_left["delays"])
         min_right_delay = min(echo_right["delays"])
         most_min_delay = min((min_left_delay,min_right_delay))
 
+        left_energy = give_energy_windowed(echo_sequence_l, most_min_delay)
+        right_energy = give_energy_windowed(echo_sequence_r, most_min_delay)
 
+       
+    
+        if debug:
+            print("plotting echoes...")
+            plt.figure(1)
+            plt.plot( impulse_time_l , echo_sequence_l)
+            plt.plot(impulse_time_r , echo_sequence_r)
+            print("l e", left_energy , " R E", right_energy, "energies", echo_left['energy'], echo_right['energy'])
+            plt.show()
+
+        observation = (left_energy, right_energy)
         
-        impulse_time_l = echo_left['impulse_result']['impulse_response']
-        impulse_time_r = echo_left['impulse_result']['impulse_response']
+        return observation , impulse_time_l
+    
+        
 
         
 

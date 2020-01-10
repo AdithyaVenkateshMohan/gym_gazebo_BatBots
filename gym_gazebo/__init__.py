@@ -172,3 +172,9 @@ register(
     entry_point='gym_gazebo.envs.BAtBot:Gazebo_BatBot_echo_Circuit_Env',
     # More arguments here
 )
+
+register(
+    id='GazeboBATBot_Sonar-v1',
+    entry_point='gym_gazebo.envs.BAtBot:Gazebo_BatBot_echo_energy_Circuit_Env',
+    # More arguments here
+)

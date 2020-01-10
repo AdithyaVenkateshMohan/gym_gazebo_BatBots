@@ -68,7 +68,9 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         # defining the action_space
         self.action_space = spaces.Discrete(4)
         # storing the function pointer for the echo_genration
-        self.echoes_genration = sonar_gen.echo_genration_for_observation 
+        # self.echoes_genration = sonar_gen.echo_genration_for_observation 
+        self.echoes_genration = ac.echo_genration_for_observation 
+        self.observation_type = "echo"
         # observation space is defined here
         self.observation_space = spaces.Box(low = -np.Inf , high = np.Inf , shape = (1,28000))
         # damage_counter severs the purpose of damage in robot if it goes too close to the to many times it will DIEEE !!!
@@ -215,3 +217,5 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         
         #reward = 1
         return reward , done 
+
+
