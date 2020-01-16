@@ -82,6 +82,10 @@ Acoustics.plot_echo(result)
 # %%
 # check out the delays
 #
-print("delays",result["delays"], "min delay", min(result['delays']))
+min_delay =  min(result['delays'])
+T = 0.001
+print("delays",result["delays"], "min delay", min(result['delays']), result['echoes_pa'], len(result['delays']), len(result['echoes_pa'])) 
+window_delay = numpy.where(result['delays'] <= min_delay+T )
+print(numpy.where(result['delays'] <= min_delay+T ), result['echoes_pa'][window_delay])
 windowed_energy = Acoustics.give_energy_windowed(result['echo_sequence'], min(result['delays']))
 print("windowed energy", windowed_energy, "energy", result['energy'])

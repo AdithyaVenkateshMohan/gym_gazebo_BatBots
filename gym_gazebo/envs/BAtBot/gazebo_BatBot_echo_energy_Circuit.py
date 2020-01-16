@@ -173,7 +173,22 @@ class Gazebo_BatBot_echo_energy_Circuit_Env(gazebo_env.GazeboEnv):
         echo_pulse,echo_time = self.echoes_genration(Cloudobservation.points , obs_mode = self.observation_type , debug = debug)
         if debug: 
             print("debug 2")
-        return echo_pulse, echo_time
+
+
+        ### giving laser ranges as observation to test the robot
+        ### remove this block code after the test is complete
+        # LaserscanRange = None
+        # while LaserscanRange is None:
+        #     try:
+        #         LaserscanRange  = rospy.wait_for_message(self.rewardsignal_topic , LaserScan , timeout= self.timeout)
+        #     except:
+        #         rospy.loginfo("exception raised at getting laser scan from topic", self.observation_topic)
+        #         LaserscanRange = None
+           
+        # ranges = LaserscanRange.ranges
+        ### for the test of the robot
+
+        return echo_pulse , echo_time
 
     # this is where reward the agent should get is calulated 
     def get_reward(self , action):

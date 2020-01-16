@@ -254,6 +254,12 @@ def give_energy_windowed(echo_seq , start_time, sample_frequency = 125000, fixed
 
     return energy
 
+def give_energy_windowed_pa(echoes_pa):
+    assert(len(echoes_pa)!=0)
+    energy = 20*np.log10(np.sum(echoes_pa))
+
+    return energy
+
 
 
 
@@ -290,9 +296,20 @@ def echo_gen_with_ears(distances , azimuths , elevations , obs_type = "echo" , d
         min_left_delay = min(echo_left["delays"])
         min_right_delay = min(echo_right["delays"])
         most_min_delay = min((min_left_delay,min_right_delay))
+        T =0.001
+        window_left = np.where(echo_left['delays'] <=  most_min_delay+T)
+        window_right = np.where(echo_right['delays'] <= most_min_delay+T)
 
         left_energy = give_energy_windowed(echo_sequence_l, most_min_delay)
         right_energy = give_energy_windowed(echo_sequence_r, most_min_delay)
+
+        if debug :
+            print("echo energy before", left_energy, right_energy)
+        left_echoes_pa = echo_left['echoes_pa'][window_left]
+        right_echoes_pa = echo_right['echoes_pa'][window_right]
+
+        left_energy = give_energy_windowed_pa(left_echoes_pa)
+        right_energy = give_energy_windowed_pa(right_echoes_pa)
 
        
     
