@@ -97,7 +97,7 @@ def echo_gen_direct(distances, azimuths, elevations, sample_frequency=125000):
     emission_level = 100
     emission_duration = 0.0025
     emission_frequency = 40000
-    emitter_radius = 0.005
+    emitter_radius = 0.025
     absorption_coefficient = 1.318  # http://www.sengpielaudio.com/calculator-air.htm
     reflection_strength = -20
     speed_of_sound = 340
@@ -117,7 +117,8 @@ def echo_gen_direct(distances, azimuths, elevations, sample_frequency=125000):
     piston_function = interp1d(degrees, piston)
     excentricity = gca(azimuths, elevations, 0, 0)
     delays = 2 * distances / speed_of_sound
-    loss_directionality = piston_function(excentricity)
+    loss_directionality = 2*piston_function(excentricity)
+    # piston emitter and reciver
 
     # %%
     # Calculate path losses
@@ -293,6 +294,7 @@ def echo_gen_with_ears(distances , azimuths , elevations , obs_type = "echo" , d
         return echo_sequence, impulse_time_l
     
     if obs_type == "eng":
+        
         min_left_delay = min(echo_left["delays"])
         min_right_delay = min(echo_right["delays"])
         most_min_delay = min((min_left_delay,min_right_delay))
@@ -303,10 +305,18 @@ def echo_gen_with_ears(distances , azimuths , elevations , obs_type = "echo" , d
         left_energy = give_energy_windowed(echo_sequence_l, most_min_delay)
         right_energy = give_energy_windowed(echo_sequence_r, most_min_delay)
 
-        if debug :
-            print("echo energy before", left_energy, right_energy)
+        
+            
         left_echoes_pa = echo_left['echoes_pa'][window_left]
         right_echoes_pa = echo_right['echoes_pa'][window_right]
+
+        if debug :
+            print(min_left_delay, min_right_delay,"min delays")
+            print("sample delays", echo_left['delays'], echo_left['delays'][window_left])
+            print("echo energy before", left_energy, right_energy)
+            print("windows", window_left , window_right , window_left[0].shape, window_right[0].shape)
+            print("echoes", left_echoes_pa , right_echoes_pa , left_echoes_pa.shape)
+            print("echoes zeroes", left_echoes_pa[np.where(left_echoes_pa == 0)], right_echoes_pa[np.where(right_echoes_pa == 0)] )
 
         left_energy = give_energy_windowed_pa(left_echoes_pa)
         right_energy = give_energy_windowed_pa(right_echoes_pa)
