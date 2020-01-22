@@ -62,7 +62,7 @@ class Gazebo_BatBot_echo_energy_Circuit_Env(gazebo_env.GazeboEnv):
         # for the wall following behav not more not less 
 
         self.distance_fromWall = 0.7
-        self.damage_distance = 0.4
+        self.damage_distance = 0.3
         self.deltaDistance = 1
         # defining the the reward range
         self.reward_range = (-np.Inf , np.Inf)
@@ -212,17 +212,18 @@ class Gazebo_BatBot_echo_energy_Circuit_Env(gazebo_env.GazeboEnv):
             elif minRange > r:
                 minRange = r
         #print("the nearest obstacle is at ", minRange)
-        if minRange >= AVOIDANCE_DISTANCE:
-            reward = 0.01
-        else:
-            reward = -0.01 
+        reward = 0
+        # if minRange >= AVOIDANCE_DISTANCE:
+        #     reward = 0.01
+        # else:
+        #     reward = -0.01 
         
         if minRange < DEATH_DISTANCE:
             self.damage_counter += 1
             #reward -= 0.05
 
 
-        done = (self.t % self.t_per_episode == 0 and self.t != 0)
+        done = ((self.t % self.t_per_episode == 0 and self.t != 0) or self.damage_counter > 2)
         if done:
             self.damage_counter = 0
         else:
@@ -231,9 +232,9 @@ class Gazebo_BatBot_echo_energy_Circuit_Env(gazebo_env.GazeboEnv):
             # reward += 0.01
         # reward based on action that it takes
         if action == self.straight:
-            reward += 0.00
+            reward += 0.05
         else:
-            reward -= 0.0
+            reward += 0.04
         
         #reward = 1
         return reward , done 

@@ -44,9 +44,10 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         
 
         # actions timestep which the time for which the action selected is excuted
-        self.action_timeStep = 0.08
+        self.action_timeStep = 0.32
         # actions velocity is the velocity at which selected action is excuted
-        self.action_velocity = 0.1
+        self.action_velocity = 0.2
+        self.angular_velocity = 1.5
 
         #common timeout constant that we wait for the data 
         self.timeout = 5
@@ -107,10 +108,10 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
                 self.velocity_toBe.linear.x = -self.action_velocity
             else:
                 if(action == self.right):
-                    self.velocity_toBe.angular.z = -self.action_velocity
+                    self.velocity_toBe.angular.z = -self.angular_velocity
                 else:
                     if(action == self.left):
-                        self.velocity_toBe.angular.z = self.action_velocity
+                        self.velocity_toBe.angular.z = self.angular_velocity
         # publishing the selected velocity
         self.vel_pub.publish(self.velocity_toBe)
         # sleep for action time step
@@ -203,7 +204,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
             #reward -= 0.05
 
 
-        done = ((self.t % self.t_per_episode == 0 and self.t != 0) or  self.damage_counter > 2 )
+        done = ((self.t % self.t_per_episode == 0 and self.t != 0) or  self.damage_counter >= 1 )
         if done:
             self.damage_counter = 0
         else:

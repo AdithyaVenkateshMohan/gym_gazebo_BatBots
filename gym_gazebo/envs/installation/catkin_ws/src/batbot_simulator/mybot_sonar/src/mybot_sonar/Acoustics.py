@@ -261,6 +261,12 @@ def give_energy_windowed_pa(echoes_pa):
 
     return energy
 
+def remove_zero_echoes(echoes , delays):
+    echoes_zero = np.where(echoes == 0)
+    cleaned_delays = np.delete(delays ,echoes_zero)
+    cleaned_echoes = np.delete(echoes, echoes_zero)
+    return cleaned_echoes , cleaned_delays
+
 
 
 
@@ -294,25 +300,32 @@ def echo_gen_with_ears(distances , azimuths , elevations , obs_type = "echo" , d
         return echo_sequence, impulse_time_l
     
     if obs_type == "eng":
+        left_echoes , left_delays = remove_zero_echoes(echo_left['echoes_pa'] , echo_left["delays"] ) 
+        right_echoes , right_delays = remove_zero_echoes(echo_right['echoes_pa'] , echo_right["delays"] ) 
         
-        min_left_delay = min(echo_left["delays"])
-        min_right_delay = min(echo_right["delays"])
+        min_left_delay = min(left_delays)
+        min_right_delay = min(right_delays)
         most_min_delay = min((min_left_delay,min_right_delay))
         T =0.001
-        window_left = np.where(echo_left['delays'] <=  most_min_delay+T)
-        window_right = np.where(echo_right['delays'] <= most_min_delay+T)
+        window_left = np.where(left_delays <=  most_min_delay+T)
+        window_right = np.where(right_delays <= most_min_delay+T)
 
         left_energy = give_energy_windowed(echo_sequence_l, most_min_delay)
         right_energy = give_energy_windowed(echo_sequence_r, most_min_delay)
 
         
             
-        left_echoes_pa = echo_left['echoes_pa'][window_left]
-        right_echoes_pa = echo_right['echoes_pa'][window_right]
+        left_echoes_pa = left_echoes[window_left]
+        if len(left_echoes_pa) ==0 :
+            left_echoes_pa = left_echoes[np.where(left_delays == min(left_delays))]
+
+        right_echoes_pa = right_echoes[window_right]
+        if len(right_echoes_pa) == 0:
+            right_echoes_pa = right_echoes[np.where(right_delays == min(right_delays))]
 
         if debug :
             print(min_left_delay, min_right_delay,"min delays")
-            print("sample delays", echo_left['delays'], echo_left['delays'][window_left])
+            print("sample delays", left_delays , left_delays[window_left])
             print("echo energy before", left_energy, right_energy)
             print("windows", window_left , window_right , window_left[0].shape, window_right[0].shape)
             print("echoes", left_echoes_pa , right_echoes_pa , left_echoes_pa.shape)
