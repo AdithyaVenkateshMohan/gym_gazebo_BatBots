@@ -12,6 +12,7 @@ from std_srvs.srv import Empty
 # this the echogenration lib which will be used to convert the point cloud data to 
 from mybot_sonar import sonar_gen 
 from mybot_sonar import Acoustics as ac 
+from mybot_sonar.echo_preprocessing import Cochlea
 from ..gazeboconnection import GazeboConnection
 
 
@@ -44,7 +45,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         
 
         # actions timestep which the time for which the action selected is excuted
-        self.action_timeStep = 0.32
+        self.action_timeStep = 0.03
         # actions velocity is the velocity at which selected action is excuted
         self.action_velocity = 0.2
         self.angular_velocity = 1.5
@@ -71,6 +72,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         # storing the function pointer for the echo_genration
         # self.echoes_genration = sonar_gen.echo_genration_for_observation 
         self.echoes_genration = ac.echo_genration_for_observation 
+        self.coc_processing = Cochlea(125000)
         self.observation_type = "echo"
         # observation space is defined here
         self.observation_space = spaces.Box(low = -np.Inf , high = np.Inf , shape = (1,28000))
@@ -157,6 +159,10 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
     def reset_velocities(self):
         self.vel_pub.publish(self.default_velocity)
         rospy.sleep(self.action_timeStep)
+    # returns the echoes after prepreceesing Cocheal bio insipred method - (left,right)
+    def do_cocheal_preprocessing(self, observation):
+        assert len(observation)==2
+        return (self.coc_processing.run(observation[0]), self.coc_processing.run(observation[1]))
     
     def get_observationEnv(self):
         Cloudobservation = None
@@ -168,6 +174,8 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
                 Cloudobservation = None
         #print("cloud points used for observation ", Cloudobservation.points)
         echo_pulse,echo_time = self.echoes_genration(Cloudobservation.points)
+        # echo preprocessing using the Cochela data
+        echo_pulse = self.do_cocheal_preprocessing(echo_pulse)
 
         return echo_pulse, echo_time
 

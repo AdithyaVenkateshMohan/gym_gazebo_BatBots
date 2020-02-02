@@ -255,10 +255,11 @@ def give_energy_windowed(echo_seq , start_time, sample_frequency = 125000, fixed
 
     return energy
 
-def give_energy_windowed_pa(echoes_pa):
+# this part of the code math formula reference can be found in the below given link
+# http://www.sengpielaudio.com/calculator-spl.htm
+def give_energy_windowed_pa(echoes_pa , mu_pa = 0.00002):
     assert(len(echoes_pa)!=0)
-    energy = 20*np.log10(np.sum(echoes_pa))
-
+    energy = 10*np.log10((np.sum(np.power(echoes_pa,2))/(np.power(mu_pa,2))))
     return energy
 
 def remove_zero_echoes(echoes , delays):
