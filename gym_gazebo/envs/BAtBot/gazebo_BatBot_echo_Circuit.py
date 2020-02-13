@@ -45,10 +45,10 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         
 
         # actions timestep which the time for which the action selected is excuted
-        self.action_timeStep = 0.03
+        self.action_timeStep = 0.15
+        self.angular_velocity = 0.15
         # actions velocity is the velocity at which selected action is excuted
-        self.action_velocity = 0.2
-        self.angular_velocity = 1.5
+        self.action_velocity = 0.1
 
         #common timeout constant that we wait for the data 
         self.timeout = 5
@@ -79,7 +79,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         # damage_counter severs the purpose of damage in robot if it goes too close to the to many times it will DIEEE !!!
 
         self.damage_counter = 0
-        self.t_per_episode = 300
+        self.t_per_episode = 100
         self.t = 0
 
         # gazebo connection is established
@@ -209,22 +209,30 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         
         if minRange < DEATH_DISTANCE:
             self.damage_counter += 1
-            #reward -= 0.05
+            reward -= 1.0
 
 
-        done = ((self.t % self.t_per_episode == 0 and self.t != 0) or  self.damage_counter >= 1 )
+        done = ((self.t % self.t_per_episode == 0 and self.t != 0))
         if done:
+            self.t = 0
+            if self.damage_counter >= 1:
+                reward -= 10
+            # else:
+            #     reward += 10
             self.damage_counter = 0
+            
         else:
             pass
             # giving the reward for being alive
             # reward += 0.01
         # reward based on action that it takes
-        if action == self.straight:
-            reward += 0.05
-        else:
-            reward += 0.01
         
+        if minRange < DEATH_DISTANCE:
+            if action == self.straight:
+                reward += 0.5
+            else:
+                reward += 0.0005
+            
         #reward = 1
         return reward , done 
 
