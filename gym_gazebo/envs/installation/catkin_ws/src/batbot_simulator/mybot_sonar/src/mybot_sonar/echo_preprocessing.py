@@ -1,5 +1,64 @@
 import numpy
+import numpy as np
 from scipy.signal import butter, lfilter, convolve
+
+
+
+
+"""preprocssing functions for data"""
+
+"""data normlization used to keep the data within 0 and 1 """
+def data_norm(obs, min_val = 0, max_val=5):
+     return (np.array(obs) - min_val)/(max_val - min_val)
+
+"""handling the echo when the length of echo arrays are less than 5000 (needs to be handled)"""
+def handling_echo_bug(echo , size = 5000):
+     state = np.zeros(5000)
+     state[:len(echo)] = echo
+     return state
+
+def preprocessing_echo(state , length_tobe = 5000, img = False):
+     assert len(state)==2 , "otherwise something wrong with data please check data format (left, right)"
+     out =[]
+     for echo in state:
+        if len(echo) < length_tobe:
+            echo = handling_echo_bug(echo)
+        else:
+            echo = echo[:length_tobe]
+
+        out.append(moving_average_window(data_norm(echo)))
+     if img:
+          return np.array([out[0],out[0],out[0],out[0],out[0],out[1],out[1],out[1], out[1],out[1]])
+     else:
+          return (out[0], out[1])
+
+def moving_average_window(state , window_size= 25 , stride= 25):
+     start = 0
+     reduced = np.array([])
+     for _ in range(int(len(state)/stride)):
+          if (start+window_size <= len(state)):
+               end = start + window_size
+          else:
+               end = len(state)
+          re = np.mean(state[start:end])
+          start+= stride
+          reduced = np.append(reduced , re)
+     return reduced
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class Cochlea:
      def __init__(self, fs):

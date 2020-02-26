@@ -13,6 +13,7 @@ from std_srvs.srv import Empty
 from mybot_sonar import sonar_gen 
 from mybot_sonar import Acoustics as ac 
 from mybot_sonar.echo_preprocessing import Cochlea
+from mybot_sonar import echo_preprocessing as epre
 from ..gazeboconnection import GazeboConnection
 
 
@@ -68,14 +69,14 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         # defining the the reward range
         self.reward_range = (-np.Inf , np.Inf)
         # defining the action_space
-        self.action_space = spaces.Discrete(4)
+        self.action_space = spaces.Discrete(3)
         # storing the function pointer for the echo_genration
         # self.echoes_genration = sonar_gen.echo_genration_for_observation 
         self.echoes_genration = ac.echo_genration_for_observation 
         self.coc_processing = Cochlea(125000)
         self.observation_type = "echo"
         # observation space is defined here
-        self.observation_space = spaces.Box(low = -np.Inf , high = np.Inf , shape = (1,28000))
+        self.observation_space = spaces.Box(low = 0 , high = 1 , shape = (10,200,1), dtype= np.float64)
         # damage_counter severs the purpose of damage in robot if it goes too close to the to many times it will DIEEE !!!
 
         self.damage_counter = 0
@@ -120,7 +121,8 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         rospy.sleep(self.action_timeStep)
         self.vel_pub.publish(self.default_velocity)
         
-        echo , time  = self.get_observationEnv()
+        echo , _  = self.get_observationEnv()
+        echo = epre.preprocessing_echo(echo , img = True)
 
         reward , done = self.get_reward(action)
         # pause the sim 
@@ -141,7 +143,9 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         #resetting velocities just in case
         self.reset_velocities()
         # getting the first observation
-        observation , echo_time = self.get_observationEnv()
+        observation , _ = self.get_observationEnv()
+        # preprocessing the echo right here
+        observation = epre.preprocessing_echo(observation , img = True)
         # the gazebo engine is paused 
         self.gazebo_pipe.pauseSim()
         
@@ -209,14 +213,20 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         
         if minRange < DEATH_DISTANCE:
             self.damage_counter += 1
-            reward -= 1.0
+            # reward -= 0.5
+        else:
+            if action == self.straight:
+                reward += 0.05
+            else:
+                reward += 0.0005
 
 
-        done = ((self.t % self.t_per_episode == 0 and self.t != 0))
+        done = ((self.t % self.t_per_episode == 0 and self.t != 0) or (self.damage_counter >= 2))
+
         if done:
             self.t = 0
-            if self.damage_counter >= 1:
-                reward -= 10
+            # if self.damage_counter >= 1:
+            #     reward -= 10
             # else:
             #     reward += 10
             self.damage_counter = 0
@@ -227,13 +237,12 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
             # reward += 0.01
         # reward based on action that it takes
         
-        if minRange < DEATH_DISTANCE:
-            if action == self.straight:
-                reward += 0.5
-            else:
-                reward += 0.0005
+        
             
         #reward = 1
         return reward , done 
+    
+    def close(self):
+        self._close()
 
 
