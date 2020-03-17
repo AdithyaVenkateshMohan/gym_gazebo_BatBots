@@ -13,22 +13,24 @@ def data_norm(obs, min_val = 0, max_val=5):
 
 """handling the echo when the length of echo arrays are less than 5000 (needs to be handled)"""
 def handling_echo_bug(echo , size = 5000):
-     state = np.zeros(5000)
+     state = np.zeros(size)
      state[:len(echo)] = echo
      return state
 
-def preprocessing_echo(state , length_tobe = 5000, img = False):
+def preprocessing_echo(state , length_tobe = 3000, img = False):
      assert len(state)==2 , "otherwise something wrong with data please check data format (left, right)"
      out =[]
      for echo in state:
         if len(echo) < length_tobe:
-            echo = handling_echo_bug(echo)
+            echo = handling_echo_bug(echo , size = length_tobe)
         else:
             echo = echo[:length_tobe]
 
         out.append(moving_average_window(data_norm(echo)))
      if img:
-          return np.array([out[0],out[0],out[0],out[0],out[0],out[1],out[1],out[1], out[1],out[1]])
+          """doing some thing funny here repeating the echoes so that it mathces the predefined RL CNN libaries just to make the image big enough"""
+          """warning this very inefficient just for research purpose have to be changed later"""
+          return np.array([out[0],out[0],out[0],out[0],out[0],out[0],out[0],out[0],out[0],out[0],out[1],out[1],out[1], out[1],out[1],out[1],out[1],out[1], out[1],out[1]])
      else:
           return (out[0], out[1])
 
@@ -44,19 +46,6 @@ def moving_average_window(state , window_size= 25 , stride= 25):
           start+= stride
           reduced = np.append(reduced , re)
      return reduced
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

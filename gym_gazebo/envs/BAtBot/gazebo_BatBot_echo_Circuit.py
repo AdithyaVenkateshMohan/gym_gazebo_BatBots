@@ -23,6 +23,16 @@ from sensor_msgs.msg import PointCloud
 from gym.utils import seeding
 import copy
 
+
+import random 
+import sys
+from geometry_msgs.msg import Pose
+from geometry_msgs.msg import PoseStamped
+
+import numpy as np
+
+from SetPoseforObjects.srv import *
+
 class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
     def __init__(self):
         
@@ -46,7 +56,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         
 
         # actions timestep which the time for which the action selected is excuted
-        self.action_timeStep = 0.15
+        self.action_timeStep = 0.06
         self.angular_velocity = 0.15
         # actions velocity is the velocity at which selected action is excuted
         self.action_velocity = 0.1
@@ -63,8 +73,8 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         # so it's good for the robot to stay from 4 to 6 units away from the wall
         # for the wall following behav not more not less 
 
-        self.distance_fromWall = 0.7
-        self.damage_distance = 0.3
+        self.distance_fromWall = 0.66
+        self.damage_distance = 0.33
         self.deltaDistance = 1
         # defining the the reward range
         self.reward_range = (-np.Inf , np.Inf)
@@ -76,11 +86,14 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         self.coc_processing = Cochlea(125000)
         self.observation_type = "echo"
         # observation space is defined here
-        self.observation_space = spaces.Box(low = 0 , high = 1 , shape = (10,200,1), dtype= np.float64)
+        self.observation_space = spaces.Box(low = 0 , high = 1 , shape = (60,120,1), dtype= np.float64)
         # damage_counter severs the purpose of damage in robot if it goes too close to the to many times it will DIEEE !!!
+        # stuck counter if the robot gets into non -dying low reward immortal mode .. I will ****ing kill it
 
         self.damage_counter = 0
-        self.t_per_episode = 100
+        self.stuck_counter = 0
+
+        self.t_per_episode = 300
         self.t = 0
 
         # gazebo connection is established
@@ -91,6 +104,11 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         self.observation_topic = '/mybot/laser/polorcloud'
         self.rewardsignal_topic = '/scan'
         self.collision_topic = '/mybot/collision'
+        self.get_robot_pose = '/robot/pose'
+        self.set_robot_srv = 'Calibration_Directionality/MoveToPtr'
+        self.safe_spawn_locations = [[-4,0],[0,0],[4,0],[-4,-7], [-2,-5] , [-2,-7], [-4, -9], [7,0], [-7,0]]
+        self.t_1state = np.zeros((20,120))
+        self.t_2state = np.zeros((20,120))
         
         self.seed = self._seed()
     
@@ -123,6 +141,12 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         
         echo , _  = self.get_observationEnv()
         echo = epre.preprocessing_echo(echo , img = True)
+        try:
+            echo_img = np.array([self.t_2state,self.t_1state,echo]).reshape(60,120,1)
+        except Exception as e:
+            print(echo.shape , self.t_1state.shape , self.t_2state.shape , e)
+        self.t_2state = self.t_1state
+        self.t_1state = echo
 
         reward , done = self.get_reward(action)
         # pause the sim 
@@ -131,7 +155,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         # do somethng abt done
         
 
-        return echo , reward , done , {}
+        return echo_img , reward , done , {}
     
     def reset(self):
         #resets the simulator to the default starting case
@@ -142,14 +166,25 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
         self.checkalltopics_pubConnections()
         #resetting velocities just in case
         self.reset_velocities()
+        # resetting the robot to a safe spawn space
+        self.reset_robot_pose()
         # getting the first observation
         observation , _ = self.get_observationEnv()
+        #reseting the variables for episode start
+        self.t = 0
+        self.t_1state = np.zeros((20,120))
+        self.t_2state = np.zeros((20,120))
+        
         # preprocessing the echo right here
         observation = epre.preprocessing_echo(observation , img = True)
+        # print(observation.shape)
+        echo_img = np.array([self.t_2state,self.t_1state,observation]).reshape(60,120,1)
+        self.t_2state = self.t_1state
+        self.t_1state = observation
         # the gazebo engine is paused 
         self.gazebo_pipe.pauseSim()
         
-        return observation
+        return echo_img
     
     def checkalltopics_pubConnections(self):
         rate = rospy.Rate(1000)
@@ -163,6 +198,30 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
     def reset_velocities(self):
         self.vel_pub.publish(self.default_velocity)
         rospy.sleep(self.action_timeStep)
+
+    def reset_robot_pose(self):
+        rospy.wait_for_service(self.set_robot_srv , 5.0)
+        z = rx = ry = rz = rw = 0
+        selected_pos = self.safe_spawn_locations[random.randint(0, len(self.safe_spawn_locations)-1)]
+        x = selected_pos[0]
+        y = selected_pos[1]
+        try:
+            position_the_obj = rospy.ServiceProxy(self.set_robot_srv, MoveToPtr)
+            pose_ = geometry_msgs.msg.Pose()
+            pose_.position.x = x
+            pose_.position.y = y
+            pose_.position.z = z
+            pose_.orientation.x = rx
+            pose_.orientation.y = ry
+            pose_.orientation.z = rz
+            pose_.orientation.w = rw
+            print(pose_)
+            resp = position_the_obj(pose_)
+            return resp.done
+        except rospy.ServiceException :
+            print("service call failed")
+            return False
+
     # returns the echoes after prepreceesing Cocheal bio insipred method - (left,right)
     def do_cocheal_preprocessing(self, observation):
         assert len(observation)==2
@@ -186,6 +245,8 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
     # this is where reward the agent should get is calulated 
     def get_reward(self , action):
         #this is not yet done have to work on reward function
+        STUCK_KILL = 10
+        DAMAGE_KILL = 3 
         AVOIDANCE_DISTANCE = self.distance_fromWall
         DEATH_DISTANCE = self.damage_distance
         LaserscanRange = None
@@ -215,13 +276,19 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
             self.damage_counter += 1
             # reward -= 0.5
         else:
-            if action == self.straight:
-                reward += 0.05
+            if minRange < AVOIDANCE_DISTANCE:
+                if action == self.straight:
+                    reward += 0.05
+                    self.stuck_counter = 0
+                else:
+                    reward -= 0.0005
+                    self.stuck_counter += 1
             else:
-                reward += 0.0005
+                reward -= 0.0005
+                self.stuck_counter +=1
 
 
-        done = ((self.t % self.t_per_episode == 0 and self.t != 0) or (self.damage_counter >= 2))
+        done = ((self.t % self.t_per_episode == 0 and self.t != 0) or (self.damage_counter >= DAMAGE_KILL) or (self.stuck_counter >= STUCK_KILL))
 
         if done:
             self.t = 0
@@ -230,6 +297,7 @@ class Gazebo_BatBot_echo_Circuit_Env(gazebo_env.GazeboEnv):
             # else:
             #     reward += 10
             self.damage_counter = 0
+            self.stuck_counter =0
             
         else:
             pass
